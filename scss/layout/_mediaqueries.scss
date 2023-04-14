@@ -10,14 +10,16 @@
         grid-template-areas: 'b1 b1 b2 b2';
     }
 
-    .body-texto h2 {
-        font-size: 32px;
-    }
-
-    .body-texto p {
-        font-size: 16px;
+    .body-texto {
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 16px;
+        }
     }
 }
+
 /* Media 991px */
 @media screen and (max-width: 991px) {
     .navbar-nav {
@@ -49,15 +51,15 @@
 
     .body-texto {
         gap: 5px;
-    }
 
-    .body-texto h2, .somos-body h2 {
-        font-size: 24px;
-        font-weight: bold;
-    }
+            h2, .somos-body h2 {
+                font-size: 24px;
+                font-weight: bold;
+            }
 
-    .body-texto p, .somos-body p {
-        line-height: 1.5;
+            p, .somos-body p {
+                line-height: 1.5;
+            }
     }
 
     .body-imagen {
@@ -109,11 +111,11 @@
 
     .nuestros-datos {
         padding: 2%;
-    }
 
-    .nuestros-datos label {
-        font-size: 20px;
-        }
+            label {
+                font-size: 20px;
+                }
+    }
 
     .redes-footer {
         gap: 25px;
@@ -121,33 +123,35 @@
 
     .redes img {
         width: 24px;
-    }
 
-    .redes img:hover {
-        width: 28px;
+            &:hover {
+                width: 28px;
+            }
     }
 }
 
 /* Media 500px */
 @media screen and (max-width: 500px) {
-    .index-section-1 .portada {
-        display: flex;
-        flex-direction: column;
-    }
+        .index-section-1 {
+            .portada {
+                display: flex;
+                flex-direction: column;
+            }
 
-    .index-section-1 .portada__body {   
-        align-items: center;
-    }
+        .portada__body {   
+            align-items: center;
 
-    .index-section-1 .portada__body img {
-        width: 20%;
-        height: 20%;
-    }
+                img {
+                    width: 20%;
+                    height: 20%;
+                }
 
-    .index-section-1 .portada__body h1 {
-        width: 100%;
-        font-size: 32px;
-        text-align: center;
+                h1 {
+                    width: 100%;
+                    font-size: 32px;
+                    text-align: center;
+                }
+        }
     }
 
     .servicios-section-1 .portada, .nosotros-section-1 .portada {
@@ -195,9 +199,9 @@
 
     .redes img {
         width: 20px;
-    }
 
-    .redes img:hover {
-        width: 24px;
+            &:hover {
+                width: 24px;
+            }
     }
 }

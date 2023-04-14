@@ -12,10 +12,10 @@
     width: 100%;
     height: 100%;
     filter: grayscale(1);
-}
 
-.brand:hover {
-    filter: grayscale(0);
+        &:hover {
+            filter: grayscale(0);
+        }
 }
 
 .br1 {

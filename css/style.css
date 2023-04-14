@@ -95,6 +95,11 @@ body {
   font-size: 14px;
 }
 
+button a {
+  text-decoration: none;
+  color: #eee;
+}
+
 /* Contacto Section-1 */
 .contacto-section-1 .portada__imagen img {
   width: 100%;
@@ -113,7 +118,6 @@ body {
   padding: 5%;
   gap: 5%;
 }
-
 .contacto-section-2 h2 {
   font-size: 40px;
   color: #FCE44D;
@@ -142,19 +146,17 @@ body {
   border-radius: 10px;
   padding: 2% 5%;
 }
+.nuestros-datos label {
+  font-size: 24px;
+}
+.nuestros-datos a {
+  text-decoration: none;
+  color: #eee;
+}
 
 .nuestros-datos__contenido {
   display: flex;
   justify-content: space-between;
-}
-
-.nuestros-datos label {
-  font-size: 24px;
-}
-
-.nuestros-datos a {
-  text-decoration: none;
-  color: #eee;
 }
 
 .contacto-datos {
@@ -168,7 +170,6 @@ body {
   display: flex;
   justify-content: space-between;
 }
-
 .nuestras-redes img {
   height: 30px;
   width: 30px;
@@ -186,7 +187,6 @@ body {
   background-color: rgba(0, 0, 0, 0.3529411765);
   grid-area: p2;
 }
-
 .index-section-1 .portada__video video {
   width: 100%;
   height: 100%;
@@ -206,22 +206,15 @@ body {
   background-color: #000000;
   height: 80%;
 }
-
 .index-section-1 .portada__body img {
   width: 30%;
   min-width: 100px;
   height: auto;
 }
-
 .index-section-1 .portada__body h1 {
   font-size: 48px;
   width: 170%;
   color: #FCE44D;
-}
-
-button a {
-  text-decoration: none;
-  color: #eee;
 }
 
 /* Inicio Section-2 */
@@ -240,12 +233,10 @@ button a {
   flex-direction: column;
   gap: 20px;
 }
-
 .body-texto h2 {
   font-size: 40px;
   color: #FCE44D;
 }
-
 .body-texto p {
   line-height: 2;
 }
@@ -255,7 +246,6 @@ button a {
   height: 100%;
   width: 100%;
 }
-
 .body-imagen img {
   height: 100%;
   width: 100%;
@@ -271,14 +261,12 @@ button a {
   grid-template-rows: auto;
   grid-template-areas: "s1 s2";
 }
-
 .index-section-3 img {
   grid-area: s1;
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-
 .index-section-3 .somos-body {
   padding: 0 10%;
   grid-area: s2;
@@ -287,13 +275,11 @@ button a {
   gap: 5px;
   align-self: center;
 }
-
-.somos-body h2 {
+.index-section-3 .somos-body h2 {
   font-size: 40px;
   color: #374151;
 }
-
-.somos-body p {
+.index-section-3 .somos-body p {
   color: #374151;
   line-height: 2;
 }
@@ -309,7 +295,6 @@ button a {
 .nosotros-section-1 .portada__imagen {
   grid-area: p2;
 }
-
 .nosotros-section-1 .portada__imagen img {
   width: 100%;
   height: 100%;
@@ -325,7 +310,6 @@ button a {
   align-items: center;
   justify-content: center;
 }
-
 .nosotros-section-1 .portada__body h1 {
   font-size: 48px;
   color: #FCE44D;
@@ -346,12 +330,10 @@ button a {
   padding: 0 5%;
   text-align: center;
 }
-
 .historia h2 {
   font-size: 40px;
   color: #FCE44D;
 }
-
 .historia p {
   line-height: 2;
 }
@@ -399,7 +381,6 @@ button a {
   position: relative;
   text-align: center;
 }
-
 .perfil img {
   width: 100%;
   height: 100%;
@@ -407,13 +388,11 @@ button a {
   opacity: 50%;
   position: relative;
 }
-
-.integrantes img:hover {
+.perfil img:hover {
   scale: 1.1;
   opacity: 100%;
   z-index: 100;
 }
-
 .perfil h5 {
   width: 100%;
   background-color: #FCE44D;
@@ -435,7 +414,6 @@ button a {
   height: 100%;
   filter: grayscale(1);
 }
-
 .brand:hover {
   filter: grayscale(0);
 }
@@ -503,7 +481,6 @@ button a {
 .servicios-section-1 .portada__imagen {
   grid-area: p2;
 }
-
 .servicios-section-1 .portada__imagen img {
   width: 100%;
   height: 100%;
@@ -519,7 +496,6 @@ button a {
   align-items: center;
   justify-content: center;
 }
-
 .servicios-section-1 .portada__body h1 {
   font-size: 48px;
   color: #FCE44D;
@@ -602,11 +578,11 @@ button a {
   .body-texto {
     gap: 5px;
   }
-  .body-texto h2, .somos-body h2 {
+  .body-texto h2, .body-texto .somos-body h2 {
     font-size: 24px;
     font-weight: bold;
   }
-  .body-texto p, .somos-body p {
+  .body-texto p, .body-texto .somos-body p {
     line-height: 1.5;
   }
   .body-imagen {

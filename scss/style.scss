@@ -1,12 +1,14 @@
-//IMPORTS
+//BASE
 @import 'base/reset';
 @import 'base/vars';
+@import 'base/utilities';
 
-//IMPORTS COMPONENTS
+//COMPONENTS
 @import 'components/navbar';
 @import 'components/footer';
+@import 'components/button';
 
-//IMPORTS LAYOUT
+//LAYOUT
 @import 'layout/contacto';
 @import 'layout/index';
 @import 'layout/nosotros';
