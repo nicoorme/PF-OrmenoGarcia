@@ -8,7 +8,7 @@
 
     & hr {
         width: 75%;
-        border: 2px solid #000000;
+        border: 2px solid $dark-text-color;
     }
 
     & a {
@@ -16,37 +16,37 @@
         font-size: 40px;
         color: $light-text-color;
     }
-}
 
-.redes-footer {
-    display: flex;
-    gap: 50px;
-}
+    & .redes-footer {
+        display: flex;
+        gap: 50px;
 
-.redes {
-    display: flex;
-    text-decoration: none;
-    color: #eee;
-    align-items: center;
-    gap: 5px;
-
-    & img {
-        width: 28px;
-        height: auto;
-        transition: 0.3s;
-
-        &:hover {
-            width: 32px;
-        }
-    }
-
-    & p {
-        font-size: 12px;
-        margin: 0;    
-        transition: 0.3s;  
+        & .redes {
+            display: flex;
+            text-decoration: none;
+            color: $light-text-color;
+            align-items: center;
+            gap: 5px;
         
-        &:hover {
-            font-size: 14px;
+            & img {
+                width: 28px;
+                height: auto;
+                transition: 0.3s;
+        
+                &:hover {
+                    width: 32px;
+                }
+            }
+        
+            & p {
+                font-size: 12px;
+                margin: 0;    
+                transition: 0.3s;  
+                
+                &:hover {
+                    font-size: 14px;
+                }
+            }  
         }
     }
 }
