@@ -9,11 +9,11 @@
 }
 
 .nav-bg-custom {
-    background-color: #000000;
+    background-color: $dark-text-color;
 }
 
 .nav-bg-custom:after {
-    background-color: #374151;
+    background-color: $main-color;
 }
 
 #navbarNav {
@@ -27,6 +27,6 @@
 
 .nav-link:hover {
     font-size: 18px;
-    color: #FCE44D;
+    color: $secundary-color;
     text-decoration: underline;
 }

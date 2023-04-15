@@ -1,4 +1,13 @@
-button a {
-    text-decoration: none;
-    color: #eee;
+.button {
+    padding: 10px 20px;
+    background: linear-gradient(to right,transparent 50%,$secundary-color 50%) left / 250%;
+    border: $secundary-color solid;
+    border-radius: 8px;
+    color: $secundary-color;
+    transition: .3s;
+
+    &:hover {
+        background-position: right;
+        color: $dark-text-color;
+    }
 }
