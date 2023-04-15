@@ -1,3 +1,9 @@
+.logo {
+    height: 50px;
+    width: auto;
+    align-self: flex-start;
+}
+
 .navbar-nav {
     gap: 50px;
 }
@@ -11,7 +17,7 @@
 }
 
 #navbarNav {
-    justify-content: center;
+    justify-content: space-between;
 }
 
 .nav-link {

@@ -17,6 +17,12 @@ body {
   font-weight: 300;
 }
 
+.logo {
+  height: 50px;
+  width: auto;
+  align-self: flex-start;
+}
+
 .navbar-nav {
   gap: 50px;
 }
@@ -30,7 +36,7 @@ body {
 }
 
 #navbarNav {
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .nav-link {
@@ -52,14 +58,14 @@ body {
   gap: 20px;
   padding: 10px 0;
 }
-
 .footer hr {
   width: 75%;
   border: 2px solid #000000;
 }
-
-.footer h3 {
+.footer a {
+  text-decoration: none;
   font-size: 40px;
+  color: #eee;
 }
 
 .redes-footer {
@@ -74,23 +80,19 @@ body {
   align-items: center;
   gap: 5px;
 }
-
 .redes img {
   width: 28px;
   height: auto;
   transition: 0.3s;
 }
-
 .redes img:hover {
   width: 32px;
 }
-
 .redes p {
   font-size: 12px;
   margin: 0;
   transition: 0.3s;
 }
-
 .redes p:hover {
   font-size: 14px;
 }
