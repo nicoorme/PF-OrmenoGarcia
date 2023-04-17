@@ -292,24 +292,22 @@ body {
 }
 
 /* Nosotros Section-1 */
-.nosotros-section-1 .portada {
+.portada-nosotros {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "p1 p2 p2";
 }
-
-.nosotros-section-1 .portada__imagen {
+.portada-nosotros .portada__imagen {
   grid-area: p2;
 }
-.nosotros-section-1 .portada__imagen img {
+.portada-nosotros .portada__imagen img {
   width: 100%;
   height: 100%;
   max-height: 550px;
   object-fit: cover;
 }
-
-.nosotros-section-1 .portada__body {
+.portada-nosotros .portada__body {
   grid-area: p1;
   height: 80%;
   background-color: #000000;
@@ -317,7 +315,7 @@ body {
   align-items: center;
   justify-content: center;
 }
-.nosotros-section-1 .portada__body h1 {
+.portada-nosotros .portada__body h1 {
   font-size: 48px;
   color: #FCE44D;
 }
@@ -329,78 +327,67 @@ body {
   align-items: center;
   gap: 50px;
 }
-
-.historia {
+.nosotros-section-2 .historia {
   display: flex;
   flex-direction: column;
   gap: 20px;
   padding: 0 5%;
   text-align: center;
 }
-.historia h2 {
+.nosotros-section-2 .historia h2 {
   font-size: 40px;
   color: #FCE44D;
 }
-.historia p {
+.nosotros-section-2 .historia p {
   line-height: 2;
 }
-
-.integrantes {
+.nosotros-section-2 .integrantes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "i1 i2 i3 i4" "i5 i6 i7 i8";
 }
-
-.i1 {
+.nosotros-section-2 .integrantes .i1 {
   grid-area: i1;
 }
-
-.i2 {
+.nosotros-section-2 .integrantes .i2 {
   grid-area: i2;
 }
-
-.i3 {
+.nosotros-section-2 .integrantes .i3 {
   grid-area: i3;
 }
-
-.i4 {
+.nosotros-section-2 .integrantes .i4 {
   grid-area: i4;
 }
-
-.i5 {
+.nosotros-section-2 .integrantes .i5 {
   grid-area: i5;
 }
-
-.i6 {
+.nosotros-section-2 .integrantes .i6 {
   grid-area: i6;
 }
-
-.i7 {
+.nosotros-section-2 .integrantes .i7 {
   grid-area: i7;
 }
-
-.i8 {
+.nosotros-section-2 .integrantes .i8 {
   grid-area: i8;
 }
-
-.perfil {
+.nosotros-section-2 .integrantes .perfil {
   position: relative;
   text-align: center;
 }
-.perfil img {
+.nosotros-section-2 .integrantes .perfil img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 50%;
   position: relative;
 }
-.perfil img:hover {
+.nosotros-section-2 .integrantes .perfil img:hover {
   scale: 1.1;
   opacity: 100%;
   z-index: 100;
 }
-.perfil h5 {
+.nosotros-section-2 .integrantes .perfil h5 {
   width: 100%;
   background-color: #FCE44D;
   color: #000000;
