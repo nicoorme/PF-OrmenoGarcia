@@ -17,16 +17,14 @@
     }
 
     & .portada__body {
+        @include flex (row, center, center);
         grid-area: p1;
         height: 80%;
-        background-color: #000000;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        background-color: $dark-text-color;
 
         h1 {
             font-size: 48px;
-            color: #FCE44D;
+            color: $secundary-color;
         }
     }
 }

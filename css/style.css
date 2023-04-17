@@ -130,55 +130,59 @@ body {
   font-size: 40px;
   color: #FCE44D;
 }
-
-.escribinos {
+.contacto-section-2 .escribinos {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
   grid-area: cont1;
   border: 1px solid #FCE44D;
   border-radius: 10px;
   padding: 2% 5%;
-  display: flex;
-  flex-direction: column;
   gap: 10px;
 }
-
-#caja-mensaje {
+.contacto-section-2 .escribinos #caja-mensaje {
   resize: none;
 }
-
-.nuestros-datos {
-  grid-area: cont2;
+.contacto-section-2 .nuestros-datos {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  grid-area: cont2;
   gap: 10px;
   border: 1px solid #FCE44D;
   border-radius: 10px;
   padding: 2% 5%;
 }
-.nuestros-datos label {
+.contacto-section-2 .nuestros-datos label {
   font-size: 24px;
 }
-.nuestros-datos a {
+.contacto-section-2 .nuestros-datos a {
   text-decoration: none;
   color: #eee;
 }
-
-.nuestros-datos__contenido {
+.contacto-section-2 .nuestros-datos .nuestros-datos__contenido {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
 }
-
-.contacto-datos {
+.contacto-section-2 .nuestros-datos .nuestros-datos__contenido .contacto-datos {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   gap: 5px;
-  justify-content: space-between;
 }
-
-.nuestras-redes {
+.contacto-section-2 .nuestros-datos .nuestros-datos__contenido .nuestras-redes {
   display: flex;
+  flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
+  gap: 25px;
 }
-.nuestras-redes img {
+.contacto-section-2 .nuestros-datos .nuestros-datos__contenido .nuestras-redes img {
   height: 30px;
   width: 30px;
 }
@@ -308,12 +312,13 @@ body {
   object-fit: cover;
 }
 .portada-nosotros .portada__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   grid-area: p1;
   height: 80%;
   background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .portada-nosotros .portada__body h1 {
   font-size: 48px;
@@ -321,15 +326,18 @@ body {
 }
 
 .nosotros-section-2 {
-  margin-top: 7%;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
+  margin-top: 7%;
   gap: 50px;
 }
 .nosotros-section-2 .historia {
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   gap: 20px;
   padding: 0 5%;
   text-align: center;
@@ -387,7 +395,7 @@ body {
   opacity: 100%;
   z-index: 100;
 }
-.nosotros-section-2 .integrantes .perfil h5 {
+.nosotros-section-2 .integrantes .perfil h3 {
   width: 100%;
   background-color: #FCE44D;
   color: #000000;
@@ -401,66 +409,52 @@ body {
   grid-template-rows: auto;
   grid-template-areas: "br1 br2 br3 br4 br5 br6" "br7 br8 br9 br10 br11 br12";
 }
-
-.brand {
+.porfolio-section-1 .brand {
   object-fit: cover;
   width: 100%;
   height: 100%;
   filter: grayscale(1);
 }
-.brand:hover {
+.porfolio-section-1 .brand:hover {
   filter: grayscale(0);
 }
-
-.br1 {
+.porfolio-section-1 .br1 {
   grid-area: br1;
 }
-
-.br2 {
+.porfolio-section-1 .br2 {
   grid-area: br2;
 }
-
-.br3 {
+.porfolio-section-1 .br3 {
   grid-area: br3;
 }
-
-.br4 {
+.porfolio-section-1 .br4 {
   grid-area: br4;
 }
-
-.br5 {
+.porfolio-section-1 .br5 {
   grid-area: br5;
 }
-
-.br6 {
+.porfolio-section-1 .br6 {
   grid-area: br6;
 }
-
-.br7 {
+.porfolio-section-1 .br7 {
   grid-area: br7;
 }
-
-.br8 {
+.porfolio-section-1 .br8 {
   grid-area: br8;
 }
-
-.br9 {
+.porfolio-section-1 .br9 {
   grid-area: br9;
 }
-
-.br10 {
+.porfolio-section-1 .br10 {
   grid-area: br10;
 }
-
-.br11 {
+.porfolio-section-1 .br11 {
   grid-area: br11;
 }
-
-.br12 {
+.porfolio-section-1 .br12 {
   grid-area: br12;
 }
-
-.br13 {
+.porfolio-section-1 .br13 {
   grid-area: br13;
 }
 
@@ -481,12 +475,13 @@ body {
   object-fit: cover;
 }
 .portada-servicios .portada__body {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   grid-area: p1;
   height: 80%;
   background-color: #000000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .portada-servicios .portada__body h1 {
   font-size: 48px;
