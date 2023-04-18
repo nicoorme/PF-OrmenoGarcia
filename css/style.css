@@ -101,7 +101,7 @@ body {
   border: #FCE44D solid;
   border-radius: 8px;
   color: #FCE44D;
-  transition: 0.3s;
+  transition: 0.7s;
 }
 .button:hover {
   background-position: right;
