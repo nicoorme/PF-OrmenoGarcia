@@ -6,47 +6,47 @@
     gap: 20px;
     padding: 10px 0;
 
-    & hr {
+    hr {
         width: 75%;
         border: 2px solid $dark-text-color;
     }
 
-    & a {
+    a {
         text-decoration: none;
         font-size: 40px;
         color: $light-text-color;
     }
 
-    & .redes-footer {
+    .redes-footer {
         display: flex;
         gap: 50px;
 
-        & .redes {
+        .redes {
             display: flex;
             text-decoration: none;
             color: $light-text-color;
             align-items: center;
             gap: 5px;
-        
-            & img {
+
+            img {
                 width: 28px;
                 height: auto;
                 transition: 0.3s;
-        
+
                 &:hover {
                     width: 32px;
                 }
             }
-        
-            & p {
-                font-size: 12px;
-                margin: 0;    
-                transition: 0.3s;  
-                
+
+            p {
+                font-size: 10px;
+                margin: 0;
+                transition: 0.3s;
+
                 &:hover {
                     font-size: 14px;
                 }
-            }  
+            }
         }
     }
 }

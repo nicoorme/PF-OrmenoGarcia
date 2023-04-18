@@ -87,7 +87,7 @@ body {
   width: 32px;
 }
 .footer .redes-footer .redes p {
-  font-size: 12px;
+  font-size: 10px;
   margin: 0;
   transition: 0.3s;
 }
@@ -109,11 +109,13 @@ body {
 }
 
 /* Contacto Section-1 */
-.contacto-section-1 .portada__imagen img {
+.contacto-section-1 .portada__imagen {
+  background-image: url(../multimedia/img/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   width: 100%;
-  height: 100%;
-  max-height: 650px;
-  object-fit: cover;
+  height: 100vh;
 }
 
 /* Contacto Section-2 */
@@ -195,7 +197,6 @@ body {
   grid-template-areas: "p1 p2 p2";
 }
 .portada .portada__video {
-  background-color: rgba(0, 0, 0, 0.3529411765);
   grid-area: p2;
 }
 .portada .portada__video video {
@@ -204,6 +205,8 @@ body {
   z-index: -1;
   position: relative;
   object-fit: cover;
+  opacity: 70%;
+  box-shadow: 5px 5px 10px #000000;
 }
 .portada .portada__body {
   display: flex;
@@ -260,6 +263,7 @@ body {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  box-shadow: 5px 5px 10px #000000;
 }
 
 /* Inicio Section-3 */
@@ -276,6 +280,7 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  box-shadow: 5px 5px 10px #000000;
 }
 .index-section-3 .somos-body {
   display: flex;
@@ -310,6 +315,7 @@ body {
   height: 100%;
   max-height: 550px;
   object-fit: cover;
+  box-shadow: 5px 5px 10px #000000;
 }
 .portada-nosotros .portada__body {
   display: flex;
@@ -467,6 +473,9 @@ body {
 }
 .porfolio-section-1 .brand:hover {
   filter: grayscale(0);
+  transform: scale(1.05, 1.05);
+  z-index: 10;
+  border-radius: 20px;
 }
 .porfolio-section-1 .br1 {
   grid-area: br1;
@@ -523,6 +532,7 @@ body {
   height: 100%;
   max-height: 550px;
   object-fit: cover;
+  box-shadow: 5px 5px 10px #000000;
 }
 .portada-servicios .portada__body {
   display: flex;
@@ -584,7 +594,6 @@ body {
     font-size: 16px;
   }
 }
-/* Media 991px */
 @media screen and (max-width: 991px) {
   .navbar-nav {
     gap: 0;
@@ -596,7 +605,6 @@ body {
     grid-template-areas: "br1 br2 br3 br4" "br5 br6 br7 br8" "br9 br10 br11 br12";
   }
 }
-/* Media 700px */
 @media screen and (max-width: 700px) {
   .portada__body h1 {
     font-size: 36px;
@@ -605,6 +613,8 @@ body {
   .index-section-3 {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 5px;
   }
   .body-texto {
@@ -632,7 +642,7 @@ body {
   .servicios-section-2 {
     display: flex;
     flex-direction: column;
-    grid-template-rows: auto;
+    justify-content: flex-start;
     align-items: center;
   }
   .nosotros-section-2 .integrantes {
@@ -667,14 +677,18 @@ body {
     width: 28px;
   }
 }
-/* Media 500px */
 @media screen and (max-width: 500px) {
   .index-section-1 .portada {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
   }
   .index-section-1 .portada__body {
     align-items: center;
+  }
+  .index-section-1 .portada__body .logo {
+    align-self: center;
   }
   .index-section-1 .portada__body img {
     width: 20%;
@@ -686,46 +700,77 @@ body {
     text-align: center;
   }
   .servicios-section-1 .portada,
-  .nosotros-section-1 .portada {
-    display: flex;
-    flex-direction: column;
-  }
-  .servicios-section-1 .portada__body h1,
-  .nosotros-section-1 .portada__body h1 {
-    font-size: 32px;
-    padding: 10px;
-  }
-  .nosotros-section-2 .integrantes {
-    display: flex;
-    flex-direction: column;
-  }
+  .nosotros-section-1 .portada,
+  .nosotros-section-2 .integrantes,
   .porfolio-section-1 {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
-  .nuestros-datos__contenido {
+  .servicios-section-1 .portada .servicios-section-1 .portada__body h1,
+  .servicios-section-1 .portada .nosotros-section-1 .portada__body h1,
+  .nosotros-section-1 .portada .servicios-section-1 .portada__body h1,
+  .nosotros-section-1 .portada .nosotros-section-1 .portada__body h1,
+  .nosotros-section-2 .integrantes .servicios-section-1 .portada__body h1,
+  .nosotros-section-2 .integrantes .nosotros-section-1 .portada__body h1,
+  .porfolio-section-1 .servicios-section-1 .portada__body h1,
+  .porfolio-section-1 .nosotros-section-1 .portada__body h1 {
+    font-size: 32px;
+    padding: 10px;
+  }
+  .servicios-section-1 .portada .nuestros-datos__contenido,
+  .nosotros-section-1 .portada .nuestros-datos__contenido,
+  .nosotros-section-2 .integrantes .nuestros-datos__contenido,
+  .porfolio-section-1 .nuestros-datos__contenido {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 20px;
   }
-  .contacto-section-2 h2 {
+  .servicios-section-1 .portada .contacto-section-2 h2,
+  .nosotros-section-1 .portada .contacto-section-2 h2,
+  .nosotros-section-2 .integrantes .contacto-section-2 h2,
+  .porfolio-section-1 .contacto-section-2 h2 {
     font-size: 32px;
   }
-  .contacto-datos {
+  .servicios-section-1 .portada .contacto-datos,
+  .nosotros-section-1 .portada .contacto-datos,
+  .nosotros-section-2 .integrantes .contacto-datos,
+  .porfolio-section-1 .contacto-datos {
     gap: 0;
   }
-  .nuestras-redes {
+  .servicios-section-1 .portada .nuestras-redes,
+  .nosotros-section-1 .portada .nuestras-redes,
+  .nosotros-section-2 .integrantes .nuestras-redes,
+  .porfolio-section-1 .nuestras-redes {
     justify-content: flex-start;
     gap: 5%;
   }
-  .redes-footer {
+  .servicios-section-1 .portada .redes-footer,
+  .nosotros-section-1 .portada .redes-footer,
+  .nosotros-section-2 .integrantes .redes-footer,
+  .porfolio-section-1 .redes-footer {
     gap: 10px;
   }
-  .redes img {
+  .servicios-section-1 .portada .redes img,
+  .nosotros-section-1 .portada .redes img,
+  .nosotros-section-2 .integrantes .redes img,
+  .porfolio-section-1 .redes img {
     width: 20px;
   }
-  .redes img:hover {
+  .servicios-section-1 .portada .redes img:hover,
+  .nosotros-section-1 .portada .redes img:hover,
+  .nosotros-section-2 .integrantes .redes img:hover,
+  .porfolio-section-1 .redes img:hover {
     width: 24px;
+  }
+  .servicios-section-1 .portada .redes p,
+  .nosotros-section-1 .portada .redes p,
+  .nosotros-section-2 .integrantes .redes p,
+  .porfolio-section-1 .redes p {
+    display: none;
   }
 }
 

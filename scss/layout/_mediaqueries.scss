@@ -1,10 +1,14 @@
+// MEDIAQUERIES 1160PX
 @media screen and (max-width: 1160px) {
     .index-section-1 .portada__body {
         height: 100%;
     }
 }
 
+// MEDIAQUERIES 1024PX
 @media screen and (max-width: 1024px) {
+
+    // INDEX
     .contenido {
         grid-template-columns: repeat(4, 1fr);
         grid-template-areas: 'b1 b1 b2 b2';
@@ -21,12 +25,15 @@
     }
 }
 
-/* Media 991px */
+// MEDIAQUERIES 991PX
 @media screen and (max-width: 991px) {
+
+    // NAVBAR
     .navbar-nav {
         gap: 0;
     }
 
+    // PORFOLIO
     .porfolio-section-1 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
@@ -38,16 +45,19 @@
     }
 }
 
-/* Media 700px */
+// MEDIAQUERIES 700PX
 @media screen and (max-width: 700px) {
+
+    // INDEX
     .portada__body h1 {
         font-size: 36px;
     }
 
     .contenido,
     .index-section-3 {
-        display: flex;
-        flex-direction: column;
+        @include flex (column, flex-start, flex-start);
+        // display: flex;
+        // flex-direction: column;
         gap: 5px;
     }
 
@@ -74,16 +84,17 @@
         padding: 0;
     }
 
+    // SERVICIOS/NOSOTROS
     .servicios-section-1 .portada__body h1,
     .nosotros-section-1 .portada__body h1 {
         font-size: 36px;
     }
 
     .servicios-section-2 {
-        display: flex;
-        flex-direction: column;
-        grid-template-rows: auto;
-        align-items: center;
+        @include flex (column, flex-start, center);
+        // display: flex;
+        // flex-direction: column;
+        // align-items: center;
     }
 
     .nosotros-section-2 .integrantes {
@@ -98,6 +109,7 @@
             'i7 i8';
     }
 
+    // PORFOLIO
     .porfolio-section-1 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -111,6 +123,7 @@
             'br11 br12';
     }
 
+    // CONTACTO
     .escribinos {
         padding: 2%;
     }
@@ -123,6 +136,7 @@
         }
     }
 
+    // FOOTER
     .redes-footer {
         gap: 25px;
     }
@@ -136,16 +150,21 @@
     }
 }
 
-/* Media 500px */
+// MEDIAQUERIES 500PX
 @media screen and (max-width: 500px) {
+
+    // INDEX
     .index-section-1 {
         .portada {
-            display: flex;
-            flex-direction: column;
+            @include flex (column, flex-start, center);
         }
 
         .portada__body {
             align-items: center;
+
+            .logo {
+                align-self: center;
+            }
 
             img {
                 width: 20%;
@@ -160,56 +179,59 @@
         }
     }
 
+    // SERVICIOS/NOSOTROS
     .servicios-section-1 .portada,
-    .nosotros-section-1 .portada {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .servicios-section-1 .portada__body h1,
-    .nosotros-section-1 .portada__body h1 {
-        font-size: 32px;
-        padding: 10px;
-    }
-
-    .nosotros-section-2 .integrantes {
-        display: flex;
-        flex-direction: column;
-    }
-
+    .nosotros-section-1 .portada,
+    .nosotros-section-2 .integrantes,
     .porfolio-section-1 {
-        display: flex;
-        flex-direction: column;
-    }
+        @include flex (column, flex-start, flex-start);
 
-    .nuestros-datos__contenido {
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
 
-    .contacto-section-2 h2 {
-        font-size: 32px;
-    }
+        .servicios-section-1 .portada__body h1,
+        .nosotros-section-1 .portada__body h1 {
+            font-size: 32px;
+            padding: 10px;
+        }
 
-    .contacto-datos {
-        gap: 0;
-    }
 
-    .nuestras-redes {
-        justify-content: flex-start;
-        gap: 5%;
-    }
+        // CONTACTO
+        .nuestros-datos__contenido {
+            @include flex (column, flex-start, flex-start);
+            // display: flex;
+            // flex-direction: column;
+            gap: 20px;
+        }
 
-    .redes-footer {
-        gap: 10px;
-    }
+        .contacto-section-2 h2 {
+            font-size: 32px;
+        }
 
-    .redes img {
-        width: 20px;
+        .contacto-datos {
+            gap: 0;
+        }
 
-        &:hover {
-            width: 24px;
+        .nuestras-redes {
+            justify-content: flex-start;
+            gap: 5%;
+        }
+
+        // FOOTER
+        .redes-footer {
+            gap: 10px;
+        }
+
+        .redes {
+            img {
+                width: 20px;
+
+                &:hover {
+                    width: 24px;
+                }
+            }
+
+            p {
+                display: none;
+            }
         }
     }
 }
