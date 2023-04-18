@@ -5,7 +5,7 @@
     grid-template-rows: auto;
     grid-template-areas: 'p1 p2 p2';
 
-    & .portada__imagen {
+    .portada__imagen {
         grid-area: p2;
 
         img {
@@ -16,7 +16,7 @@
         }
     }
 
-    & .portada__body {
+    .portada__body {
         @include flex (row, center, center);
         grid-area: p1;
         height: 80%;
@@ -62,6 +62,7 @@
         .flip-box {
             transform-style: preserve-3d;
             perspective: 1000px;
+            margin: 10px;
 
             .foto1 {
                 background-image: url(../multimedia/img/personas/p1.jpg);

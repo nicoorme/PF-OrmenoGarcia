@@ -359,6 +359,7 @@ body {
 .nosotros-section-2 .integrantes .flip-box {
   transform-style: preserve-3d;
   perspective: 1000px;
+  margin: 10px;
 }
 .nosotros-section-2 .integrantes .flip-box .foto1 {
   background-image: url(../multimedia/img/personas/p1.jpg);

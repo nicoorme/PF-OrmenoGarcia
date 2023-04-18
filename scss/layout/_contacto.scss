@@ -18,12 +18,12 @@
     padding: 5%;
     gap: 5%;
 
-    & h2 {
+    h2 {
         font-size: 40px;
         color: $secundary-color;
     }
 
-    & .escribinos {
+    .escribinos {
         @include flex (column, space-between, space-between);
         grid-area: cont1;
         border: 1px solid $secundary-color;
@@ -32,12 +32,12 @@
 
         gap: 10px;
 
-        & #caja-mensaje {
+        #caja-mensaje {
             resize: none;
         }
     }
 
-    & .nuestros-datos {
+    .nuestros-datos {
         @include flex (column, space-between, space-between);
         grid-area: cont2;
         gap: 10px;
@@ -45,28 +45,28 @@
         border-radius: 10px;
         padding: 2% 5%;
 
-        & label {
+        label {
             font-size: 24px;
         }
 
-        & a {
+        a {
             text-decoration: none;
             color: $light-text-color;
         }
 
-        & .nuestros-datos__contenido {
+        .nuestros-datos__contenido {
             @include flex (row, space-between, flex-start);
 
-            & .contacto-datos {
+            .contacto-datos {
                 @include flex (column, space-between, center);
                 gap: 5px;
             }
 
-            & .nuestras-redes {
+            .nuestras-redes {
                 @include flex (row, space-between, flex-start);
                 gap: 25px;
 
-                & img {
+                img {
                     height: 30px;
                     width: 30px;
                 }

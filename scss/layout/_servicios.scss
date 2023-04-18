@@ -5,7 +5,7 @@
     grid-template-rows: auto;
     grid-template-areas: 'p2 p2 p1';
 
-    & .portada__imagen {
+    .portada__imagen {
         grid-area: p2;
 
         img {
@@ -16,7 +16,7 @@
         }
     }
 
-    & .portada__body {
+    .portada__body {
         @include flex (row, center, center);
         grid-area: p1;
         height: 80%;
