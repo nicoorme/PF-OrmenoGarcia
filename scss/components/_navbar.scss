@@ -13,14 +13,14 @@
             min-height: 50px;
 
             .nav-link {
-                color: #eee;
+                position: relative;
+                color: $light-color;
                 transition: 0.5s;
-                margin: 0 30px;
+                padding: 15px 30px;
 
                 &:hover {
-                    font-size: 18px;
                     color: $secundary-color;
-                    text-decoration: underline;
+                    transform: scale(1.25, 1.25);
                 }
             }
         }

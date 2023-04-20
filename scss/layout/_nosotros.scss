@@ -1,57 +1,41 @@
 /* Nosotros Section-1 */
-.portada-nosotros {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 'p1 p2 p2';
+.nosotros-portada {
+    @include flex(row, center, center);
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url(../multimedia/img/nosotros.jpg);
+    background-size: cover;
+    background-position: center;
 
-    .portada__imagen {
-        grid-area: p2;
-
-        img {
-            width: 100%;
-            height: 100%;
-            max-height: 550px;
-            object-fit: cover;
-            box-shadow: 5px 5px 10px $dark-text-color;
-        }
-    }
-
-    .portada__body {
-        @include flex (row, center, center);
-        grid-area: p1;
-        height: 80%;
-        background-color: $dark-text-color;
-
-        h1 {
-            font-size: 48px;
-            color: $secundary-color;
-        }
+    h1 {
+        font-size: 75px;
+        position: relative;
+        color: $light-color;
     }
 }
 
-.nosotros-section-2 {
+.nosotros__contenido {
     @include flex (column, center, center);
-    margin-top: 7%;
+    margin-top: 5%;
     gap: 50px;
 
-    .historia {
+    .contenido__historia {
         @include flex (column, center, center);
         gap: 20px;
         padding: 0 5%;
         text-align: center;
 
         h2 {
-            font-size: 40px;
             color: $secundary-color;
         }
 
         p {
-            line-height: 2;
+            color: $light-color;
         }
     }
 
-    .integrantes {
+    .contenido__integrantes {
         width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
