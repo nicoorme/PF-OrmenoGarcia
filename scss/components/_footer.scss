@@ -1,20 +1,21 @@
 .footer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex (column, center, center);
     gap: 20px;
     padding: 10px 0;
 
     hr {
         width: 75%;
-        border: 2px solid $dark-text-color;
+        border: 2px solid $secundary-color;
     }
 
     a {
-        text-decoration: none;
         font-size: 40px;
-        color: $light-text-color;
+        transition: 0.3s;
+
+        &:hover {
+            transform: scale(1.1, 1.1);
+            color: $secundary-color;
+        }
     }
 
     .redes-footer {
@@ -22,30 +23,21 @@
         gap: 50px;
 
         .redes {
-            display: flex;
-            text-decoration: none;
-            color: $light-text-color;
-            align-items: center;
+            @include flex (row, center, center);
             gap: 5px;
+            transition: 0.3s;
 
             img {
                 width: 28px;
                 height: auto;
-                transition: 0.3s;
-
-                &:hover {
-                    width: 32px;
-                }
             }
 
             p {
-                font-size: 10px;
-                margin: 0;
-                transition: 0.3s;
+                font-size: 12px;
+            }
 
-                &:hover {
-                    font-size: 14px;
-                }
+            &:hover {
+                transform: scale(1.1, 1.1);
             }
         }
     }

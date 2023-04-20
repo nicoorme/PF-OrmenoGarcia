@@ -1,13 +1,17 @@
 .button {
+    width: fit-content;
+    font-size: 20px;
     padding: 10px 20px;
     background: linear-gradient(to right, transparent 50%, $secundary-color 50%) left / 250%;
-    border: $secundary-color solid;
-    border-radius: 8px;
+    border: 2px solid $secundary-color;
+    border-radius: 12px;
     color: $secundary-color;
-    transition: .7s;
+    transition: 0.7s;
+    z-index: 10;
+    cursor: pointer;
 
     &:hover {
         background-position: right;
-        color: $dark-text-color;
+        color: #191919;
     }
 }

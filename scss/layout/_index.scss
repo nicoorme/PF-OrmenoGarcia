@@ -1,72 +1,70 @@
-/* Inicio Section-1 */
-.portada {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas: 'p1 p2 p2';
+/* Inicio Section Portada */
+.index-section-portada {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    position: relative;
 
     .portada__video {
-        // background-color: #0000005a;
-        grid-area: p2;
 
         video {
+            position: absolute;
+            top: 0;
+            left: 0;
             width: 100%;
-            height: 100%;
-            z-index: -1;
-            position: relative;
+            height: 100vh;
             object-fit: cover;
-            opacity: 70%;
-            box-shadow: 5px 5px 10px $dark-text-color;
+            filter: brightness(.35);
         }
     }
 
-    .portada__body {
-        @include flex (column, flex-start, flex-start);
-        grid-area: p1;
-        padding: 5%;
-        gap: 20px;
-        background-color: $dark-text-color;
-        height: 80%;
+    .portada__text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+        margin-top: 100px;
+    }
 
-        img {
-            width: 30%;
-            min-width: 100px;
-            height: auto;
-        }
+    h1 {
+        position: relative;
+        color: #eee;
+        font-size: 45px;
+    }
 
-        h1 {
-            font-size: 48px;
-            width: 170%;
-            color: $secundary-color;
-        }
+    img {
+        position: relative;
+        width: 200px;
+        height: 200px;
     }
 }
 
-/* Inicio Section-2 */
-.contenido {
+/* Inicio Section Contenido */
+.index-section-contenido {
     padding: 10% 5%;
     display: grid;
     gap: 5%;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: auto;
     grid-template-areas: 'b1 b1 b1 b2 b2';
+    align-items: center;
 
-    .body-texto {
+    .contenido__body-texto {
         @include flex (column, flex-start, flex-start);
         grid-area: b1;
         gap: 20px;
 
         h2 {
-            font-size: 40px;
             color: $secundary-color;
         }
 
         p {
-            line-height: 2;
+            color: $light-color;
         }
     }
 
-    .body-imagen {
+    .contenido__body-imagen {
         grid-area: b2;
         height: 100%;
         width: 100%;
@@ -75,13 +73,13 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
-            box-shadow: 5px 5px 10px $dark-text-color;
+            box-shadow: 5px 5px 10px $dark-color;
         }
     }
 }
 
-/* Inicio Section-3 */
-.index-section-3 {
+/* Inicio Section Somos */
+.index-section-somos {
     padding: 5%;
     background-color: $secundary-color;
     display: grid;
@@ -94,23 +92,13 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
-        box-shadow: 5px 5px 10px $dark-text-color;
+        box-shadow: 5px 5px 10px $dark-color;
     }
 
-    .somos-body {
+    .somos__body-texto {
         @include flex (column, flex-start, center);
         padding: 0 10%;
         grid-area: s2;
-        gap: 5px;
-
-        h2 {
-            font-size: 40px;
-            color: $main-color;
-        }
-
-        p {
-            color: $main-color;
-            line-height: 2;
-        }
+        gap: 15px;
     }
 }

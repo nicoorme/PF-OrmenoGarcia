@@ -13,6 +13,8 @@
             crossorigin="anonymous" />
         <!-- CSS -->
         <link rel="stylesheet" href="css/style.css" />
+        <!-- favicon -->
+        <link rel="shortcut icon" href="multimedia/logos/mic-logo-white.png" type="image/x-icon" />
     </head>
     <!-- BODY -->
     <body>
@@ -31,7 +33,6 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
-                        <a href="index.html"><img src="multimedia/logos/transparente-blanco.png" alt="" class="logo" /></a>
                         <ul class="navbar-nav">
                             <li class="nav-item">
                                 <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
@@ -55,24 +56,21 @@
         </header>
         <!-- MAIN -->
         <main>
-            <section class="index-section-1">
-                <div class="portada">
-                    <div class="portada__video">
-                        <video autoplay loop muted>
-                            <source src="multimedia/videos/video-portada.mp4" type="video/mp4" />
-                        </video>
-                    </div>
-                    <div class="portada__body">
-                        <img src="multimedia/logos/transparente-blanco.png" alt="" class="logo" />
-                        <h1>Te ayudamos a alcanzar tus metas</h1>
-                        <button class="button" onclick="location.href='pages/contacto.html'">Contactanos</button>
-                    </div>
+            <section class="index-section-portada">
+                <div class="portada__video">
+                    <video autoplay loop muted>
+                        <source src="multimedia/videos/video-portada.mp4" type="video/mp4" />
+                    </video>
+                </div>
+                <div class="portada__text">
+                    <img src="multimedia/logos/mic-logo-yellow.png" alt="" />
+                    <h1>Servicios digitales</h1>
+                    <button class="button" onclick="location.href='pages/contacto.html'">Contactanos</button>
                 </div>
             </section>
-            <section class="index-section-2">
-                <div class="contenido">
-                    <div class="body-texto">
-                        <h2>Soluciones digitales para tu negocio</h2>
+            <section class="index-section-contenido">
+                    <div class="contenido__body-texto">
+                        <h2>Soluciones para tu negocio</h2>
                         <p>Estamos aquí para ayudarte a llevar tu negocio al siguiente nivel en el mundo digital.</p>
                         <p>
                             Somos un equipo de expertos apasionados por la tecnología y el marketing digital, y estamos aquí para brindarte
@@ -98,13 +96,12 @@
                             hacer crecer tu negocio en línea.
                         </p>
                     </div>
-                    <div class="body-imagen">
+                    <div class="contenido__body-imagen">
                         <img src="multimedia/img/body.jpg" alt="" />
                     </div>
-                </div>
             </section>
-            <section class="index-section-3">
-                <div class="somos-body">
+            <section class="index-section-somos">
+                <div class="somos__body-texto">
                     <h2>Somos</h2>
                     <p>
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis dolorem voluptatum odio odit laboriosam hic
