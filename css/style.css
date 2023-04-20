@@ -22,15 +22,25 @@ body h2 {
   font-size: 40px;
   margin: 0;
 }
+body h1,
+body h2,
+body h3,
+body h4,
+body h5,
+body h6 {
+  cursor: default;
+}
 body p {
   font-family: sans-serif;
   font-size: 16px;
   margin: 0;
   line-height: 2;
+  cursor: default;
 }
 body a {
   text-decoration: none;
   color: #eee;
+  cursor: pointer;
 }
 
 .nav-bg-custom {
@@ -236,7 +246,7 @@ body a {
 
 /* Inicio Section Contenido */
 .index-section-contenido {
-  padding: 10% 5%;
+  padding: 5%;
   display: grid;
   gap: 5%;
   grid-template-columns: repeat(5, 1fr);
@@ -514,39 +524,34 @@ body a {
 }
 
 /* Inicio Section-1 */
-.portada-servicios {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: auto;
-  grid-template-areas: "p2 p2 p1";
-}
-.portada-servicios .portada__imagen {
-  grid-area: p2;
-}
-.portada-servicios .portada__imagen img {
-  width: 100%;
-  height: 100%;
-  max-height: 550px;
-  object-fit: cover;
-  box-shadow: 5px 5px 10px #000000;
-}
-.portada-servicios .portada__body {
+.servicios-portada {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  grid-area: p1;
-  height: 80%;
-  background-color: #000000;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url(../multimedia/img/servicios.jpg);
+  background-size: cover;
+  background-position: center;
 }
-.portada-servicios .portada__body h1 {
-  font-size: 48px;
-  color: #FCE44D;
+.servicios-portada h1 {
+  font-size: 75px;
+  position: relative;
+  color: #eee;
 }
 
 /* Servicios Section-2 */
-.servicios-section-2 {
-  margin-top: 7%;
+.servicios__contenido {
+  margin-top: 5%;
+}
+.servicios__contenido h2 {
+  text-align: center;
+  color: #FCE44D;
+}
+.servicios__contenido .contenido__cards {
+  margin-top: 5%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
@@ -554,22 +559,35 @@ body a {
   justify-items: center;
   gap: 50px;
 }
-.servicios-section-2 .c1 {
+.servicios__contenido .contenido__cards .card {
+  border: 2px solid #FCE44D;
+  box-shadow: 3px 3px 15px #000000;
+}
+.servicios__contenido .contenido__cards .card img {
+  filter: brightness(0.65);
+}
+.servicios__contenido .contenido__cards .card img:hover {
+  filter: brightness(1);
+}
+.servicios__contenido .contenido__cards .card h3 {
+  font-family: "oswald";
+}
+.servicios__contenido .contenido__cards .c1 {
   grid-area: c1;
 }
-.servicios-section-2 .c2 {
+.servicios__contenido .contenido__cards .c2 {
   grid-area: c2;
 }
-.servicios-section-2 .c3 {
+.servicios__contenido .contenido__cards .c3 {
   grid-area: c3;
 }
-.servicios-section-2 .c4 {
+.servicios__contenido .contenido__cards .c4 {
   grid-area: c4;
 }
-.servicios-section-2 .c5 {
+.servicios__contenido .contenido__cards .c5 {
   grid-area: c5;
 }
-.servicios-section-2 .c6 {
+.servicios__contenido .contenido__cards .c6 {
   grid-area: c6;
 }
 
