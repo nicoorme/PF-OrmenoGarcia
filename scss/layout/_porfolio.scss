@@ -1,74 +1,88 @@
-.porfolio-section-1 {
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: auto;
-    grid-template-areas:
-        'br1 br2 br3 br4 br5 br6'
-        'br7 br8 br12 br10 br11 br9';
+.porfolio__contenido {
+    @include flex(column, center, center);
+    padding-top: 100px;
+    gap: 30px;
 
-    .brand {
-        object-fit: cover;
-        width: 100%;
-        height: 100%;
-        filter: grayscale(1);
+    h1 {
+        color: $secundary-color;
+    }
 
-        &:hover {
-            filter: grayscale(0);
-            transform: scale(1.05, 1.05);
-            z-index: 10;
-            border-radius: 20px;
+    .contenido__cards {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            'br1 br2 br3'
+            'br4 br5 br6'
+            'br7 br8 br12'
+            'br10 br11 br9';
+
+        .brand {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            filter: grayscale(1) blur(1px);
+            border: 2px solid $main-color;
+
+            &:hover {
+                filter: grayscale(0);
+                transform: scale(1.1, 1.1);
+                z-index: 10;
+                border: 2px solid $secundary-color;
+                border-radius: 20px;
+            }
         }
-    }
 
-    .br1 {
-        grid-area: br1;
-    }
+        .br1 {
+            grid-area: br1;
+        }
 
-    .br2 {
-        grid-area: br2;
-    }
+        .br2 {
+            grid-area: br2;
+        }
 
-    .br3 {
-        grid-area: br3;
-    }
+        .br3 {
+            grid-area: br3;
+        }
 
-    .br4 {
-        grid-area: br4;
-    }
+        .br4 {
+            grid-area: br4;
+        }
 
-    .br5 {
-        grid-area: br5;
-    }
+        .br5 {
+            grid-area: br5;
+        }
 
-    .br6 {
-        grid-area: br6;
-    }
+        .br6 {
+            grid-area: br6;
+        }
 
-    .br7 {
-        grid-area: br7;
-    }
+        .br7 {
+            grid-area: br7;
+        }
 
-    .br8 {
-        grid-area: br8;
-    }
+        .br8 {
+            grid-area: br8;
+        }
 
-    .br9 {
-        grid-area: br9;
-    }
+        .br9 {
+            grid-area: br9;
+        }
 
-    .br10 {
-        grid-area: br10;
-    }
+        .br10 {
+            grid-area: br10;
+        }
 
-    .br11 {
-        grid-area: br11;
-    }
+        .br11 {
+            grid-area: br11;
+        }
 
-    .br12 {
-        grid-area: br12;
-    }
+        .br12 {
+            grid-area: br12;
+        }
 
-    .br13 {
-        grid-area: br13;
+        .br13 {
+            grid-area: br13;
+        }
     }
 }
