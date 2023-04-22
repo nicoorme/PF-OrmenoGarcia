@@ -44,17 +44,58 @@
     gap: 5%;
     padding: 5%;
 
+    // *media
+    @include tablet {
+        @include grid (repeat(4, 1fr));
+        grid-template-areas: 'b1 b1 b2 b2';
+        gap: 2%;
+        padding: 2%;
+    }
+
+    @include mobile {
+        @include flex (column, flex-start, center);
+    }
+
+    // *fin media
+
     .contenido__body-texto {
         @include flex (column, center, flex-start);
         gap: 20px;
         grid-area: b1;
 
+            // *media
+            @include tablet {
+                gap: 2%;
+            }
+
+            // *fin media
+
         h2 {
             color: $secundary-color;
+
+            // *media
+            @include tablet {
+                font-size: 30px;
+            }
+
+            @include mobile {
+                font-size: 24px;
+            }
+
+            // *fin media
         }
 
         p {
             color: $light-color;
+
+            // *media
+            @include mobile {
+                font-size: 15px;
+                line-height: 1.25;
+                margin: 2% 0;
+            }
+
+            // *fin media
         }
     }
 
@@ -79,6 +120,17 @@
     background-color: $secundary-color;
     padding: 5%;
 
+    // *media
+    @include tablet {
+        padding: 2%;
+    }
+
+    @include mobile {
+        @include flex (column, flex-start, center);
+    }
+
+    // *fin media
+
     img {
         box-shadow: 5px 5px 10px $dark-color;
         grid-area: s1;
@@ -92,5 +144,40 @@
         gap: 15px;
         grid-area: s2;
         padding: 0 10%;
+
+        // *media
+        @include tablet {
+            gap: 2%;
+            padding: 2%;
+        }
+
+        // *fin media
+
+        h2 {
+
+            // *media
+            @include tablet {
+                font-size: 30px;
+            }
+
+            @include mobile {
+                font-size: 24px;
+            }
+
+            // *fin media
+
+        }
+
+        p {
+
+            // *media
+            @include mobile {
+                font-size: 15px;
+                line-height: 1.25;
+                margin: 2% 0;
+            }
+
+            // *fin media
+        }
     }
 }

@@ -344,6 +344,24 @@ body label {
   gap: 5%;
   padding: 5%;
 }
+@media screen and (max-width: 991px) {
+  .index-contenido {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "b1 b1 b2 b2";
+    gap: 2%;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .index-contenido {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 .index-contenido .contenido__body-texto {
   align-items: flex-start;
   display: flex;
@@ -352,11 +370,33 @@ body label {
   gap: 20px;
   grid-area: b1;
 }
+@media screen and (max-width: 991px) {
+  .index-contenido .contenido__body-texto {
+    gap: 2%;
+  }
+}
 .index-contenido .contenido__body-texto h2 {
   color: #FCE44D;
 }
+@media screen and (max-width: 991px) {
+  .index-contenido .contenido__body-texto h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .index-contenido .contenido__body-texto h2 {
+    font-size: 24px;
+  }
+}
 .index-contenido .contenido__body-texto p {
   color: #eee;
+}
+@media screen and (max-width: 576px) {
+  .index-contenido .contenido__body-texto p {
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 2% 0;
+  }
 }
 .index-contenido .contenido__body-imagen {
   grid-area: b2;
@@ -379,6 +419,19 @@ body label {
   background-color: #FCE44D;
   padding: 5%;
 }
+@media screen and (max-width: 991px) {
+  .index-somos {
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .index-somos {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 .index-somos img {
   box-shadow: 5px 5px 10px #000000;
   grid-area: s1;
@@ -394,6 +447,29 @@ body label {
   gap: 15px;
   grid-area: s2;
   padding: 0 10%;
+}
+@media screen and (max-width: 991px) {
+  .index-somos .somos__body-texto {
+    gap: 2%;
+    padding: 2%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .index-somos .somos__body-texto h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .index-somos .somos__body-texto h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .index-somos .somos__body-texto p {
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 2% 0;
+  }
 }
 
 /* Nosotros Section Portada */
