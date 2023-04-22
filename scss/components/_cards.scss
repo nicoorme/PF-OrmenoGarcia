@@ -1,3 +1,30 @@
+// Card Servicios
+.card-servicios {
+    width: 90%;
+    border: 2px solid $secundary-color;
+    box-shadow: 3px 3px 15px $dark-color;
+
+    img {
+        filter: brightness(.65);
+
+        &:hover {
+            filter: brightness(1);
+        }
+    }
+
+    h3 {
+        font-family: "oswald";
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 15px;
+        line-height: 1;
+        text-align: justify;
+    }
+}
+
+// Card Perfiles
 .card-perfil {
     border-radius: 16px;
     height: 90%;

@@ -9,7 +9,7 @@
     .portada__video {
 
         video {
-            filter: brightness(.35);
+            filter: brightness(.55) blur(3px);
             height: 100vh;
             object-fit: cover;
             position: absolute;
@@ -51,7 +51,7 @@
     padding: 5%;
 
     .contenido__body-texto {
-        @include flex (column, flex-start, flex-start);
+        @include flex (column, center, flex-start);
         gap: 20px;
         grid-area: b1;
 
@@ -96,7 +96,7 @@
     }
 
     .somos__body-texto {
-        @include flex (column, flex-start, center);
+        @include flex (column, center, flex-start);
         gap: 15px;
         grid-area: s2;
         padding: 0 10%;

@@ -27,43 +27,14 @@
 
     .contenido__cards {
         display: grid;
-        gap: 50px;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
-        'c1 c2'
-        'c3 c4'
-        'c5 c6';
+            'c1 c2'
+            'c3 c4'
+            'c5 c6';
         justify-items: center;
         margin-top: 5%;
-
-        .card {
-            border: 2px solid $secundary-color;
-            box-shadow: 3px 3px 15px $dark-color;
-
-            .carousel-item {
-                justify-items: center;
-            }
-
-            img {
-                filter: brightness(.65);
-
-                &:hover {
-                    filter: brightness(1);
-                }
-            }
-
-            h3 {
-                font-family: "oswald";
-                font-size: 20px;
-            }
-
-            p {
-                font-size: 15px;
-                line-height: 1;
-                text-align: justify;
-            }
-        }
 
         .c1 {
             grid-area: c1;
