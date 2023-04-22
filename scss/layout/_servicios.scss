@@ -26,9 +26,7 @@
     }
 
     .contenido__cards {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
+        @include grid (repeat(2, 1fr));
         grid-template-areas:
             'c1 c2'
             'c3 c4'

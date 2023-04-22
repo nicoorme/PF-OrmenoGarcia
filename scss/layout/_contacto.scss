@@ -10,13 +10,11 @@
 
 /* Contacto Section-2 */
 .contacto__contenido {
-    display: grid;
-    gap: 5%;
-    grid-template-columns: repeat(1, 1fr);
-    grid-template-rows: auto;
+    @include grid (repeat(1, 1fr));
     grid-template-areas:
         'cont1'
         'cont2';
+    gap: 5%;
     justify-content: center;
     padding: 5%;
 
@@ -35,11 +33,6 @@
 
         input {
             background-color: rgb(174, 174, 174);
-
-// todo CAMBIAR ACTIVE POR FIJO
-            &:active {
-                background-color: $light-color;
-            }
         }
 
         #caja-mensaje {

@@ -229,10 +229,10 @@ body label {
 /* Contacto Section-2 */
 .contacto__contenido {
   display: grid;
-  gap: 5%;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "cont1" "cont2";
+  gap: 5%;
   justify-content: center;
   padding: 5%;
 }
@@ -253,9 +253,6 @@ body label {
 }
 .contacto__contenido .contenido__escribinos input {
   background-color: rgb(174, 174, 174);
-}
-.contacto__contenido .contenido__escribinos input:active {
-  background-color: #eee;
 }
 .contacto__contenido .contenido__escribinos #caja-mensaje {
   background-color: rgb(174, 174, 174);
@@ -339,12 +336,12 @@ body label {
 
 /* Inicio Section Contenido */
 .index-contenido {
-  align-items: center;
   display: grid;
-  gap: 5%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "b1 b1 b1 b2 b2";
+  align-items: center;
+  gap: 5%;
   padding: 5%;
 }
 .index-contenido .contenido__body-texto {
@@ -375,12 +372,12 @@ body label {
 
 /* Inicio Section Somos */
 .index-somos {
-  background-color: #FCE44D;
   display: grid;
-  padding: 5%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "s1 s2";
+  background-color: #FCE44D;
+  padding: 5%;
 }
 .index-somos img {
   box-shadow: 5px 5px 10px #000000;

@@ -8,9 +8,7 @@
     }
 
     .contenido__cards {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto;
+        @include grid (repeat(3, 1fr));
         grid-template-areas:
             'br1 br2 br3'
             'br4 br5 br6'

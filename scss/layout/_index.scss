@@ -38,12 +38,10 @@
 
 /* Inicio Section Contenido */
 .index-contenido {
-    align-items: center;
-    display: grid;
-    gap: 5%;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: auto;
+    @include grid (repeat(5, 1fr));
     grid-template-areas: 'b1 b1 b1 b2 b2';
+    align-items: center;
+    gap: 5%;
     padding: 5%;
 
     .contenido__body-texto {
@@ -76,12 +74,10 @@
 
 /* Inicio Section Somos */
 .index-somos {
-    background-color: $secundary-color;
-    display: grid;
-    padding: 5%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
+    @include grid (repeat(2, 1fr));
     grid-template-areas: 's1 s2';
+    background-color: $secundary-color;
+    padding: 5%;
 
     img {
         box-shadow: 5px 5px 10px $dark-color;
