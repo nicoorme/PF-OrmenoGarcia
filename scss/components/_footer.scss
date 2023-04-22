@@ -3,6 +3,12 @@
     gap: 20px;
     padding: 10px 0;
 
+    // *media
+    @include mobile {
+        gap: 10px;
+    }
+    // *fin media
+
     hr {
         border: 2px solid $secundary-color;
         width: 75%;
@@ -11,6 +17,12 @@
     a {
         font-size: 40px;
         transition: 0.3s;
+
+        // *media
+        @include mobile {
+            font-size: 30px;
+        }
+        // *fin media
 
         &:hover {
             color: $secundary-color;
@@ -34,6 +46,13 @@
 
             p {
                 font-size: 12px;
+
+                // *media
+                @include mobile {
+                    display: none;
+                }
+
+                // *fin media
             }
 
             &:hover {

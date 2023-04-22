@@ -3,6 +3,7 @@
     @include flex (row, center, center);
     min-height: 100vh;
     position: relative;
+    text-align: center;
 
     .portada__video {
 
@@ -49,7 +50,6 @@
         @include grid (repeat(4, 1fr));
         grid-template-areas: 'b1 b1 b2 b2';
         gap: 2%;
-        padding: 2%;
     }
 
     @include mobile {
@@ -121,10 +121,6 @@
     padding: 5%;
 
     // *media
-    @include tablet {
-        padding: 2%;
-    }
-
     @include mobile {
         @include flex (column, flex-start, center);
     }

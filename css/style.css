@@ -87,6 +87,11 @@ body label {
   gap: 20px;
   padding: 10px 0;
 }
+@media screen and (max-width: 576px) {
+  .footer {
+    gap: 10px;
+  }
+}
 .footer hr {
   border: 2px solid #FCE44D;
   width: 75%;
@@ -94,6 +99,11 @@ body label {
 .footer a {
   font-size: 40px;
   transition: 0.3s;
+}
+@media screen and (max-width: 576px) {
+  .footer a {
+    font-size: 30px;
+  }
 }
 .footer a:hover {
   color: #FCE44D;
@@ -117,6 +127,11 @@ body label {
 }
 .footer .redes-footer .redes p {
   font-size: 12px;
+}
+@media screen and (max-width: 576px) {
+  .footer .redes-footer .redes p {
+    display: none;
+  }
 }
 .footer .redes-footer .redes:hover {
   transform: scale(1.1, 1.1);
@@ -305,6 +320,7 @@ body label {
   justify-content: center;
   min-height: 100vh;
   position: relative;
+  text-align: center;
 }
 .index-portada .portada__video video {
   filter: brightness(0.55) blur(3px);
@@ -351,7 +367,6 @@ body label {
     grid-template-rows: auto;
     grid-template-areas: "b1 b1 b2 b2";
     gap: 2%;
-    padding: 2%;
   }
 }
 @media screen and (max-width: 576px) {
@@ -418,11 +433,6 @@ body label {
   grid-template-areas: "s1 s2";
   background-color: #FCE44D;
   padding: 5%;
-}
-@media screen and (max-width: 991px) {
-  .index-somos {
-    padding: 2%;
-  }
 }
 @media screen and (max-width: 576px) {
   .index-somos {
