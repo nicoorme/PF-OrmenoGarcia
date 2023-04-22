@@ -1,5 +1,5 @@
 /* Inicio Section Portada */
-.index-section-portada {
+.index-portada {
     align-items: center;
     display: flex;
     justify-content: center;
@@ -41,7 +41,7 @@
 }
 
 /* Inicio Section Contenido */
-.index-section-contenido {
+.index-contenido {
     align-items: center;
     display: grid;
     gap: 5%;
@@ -79,7 +79,7 @@
 }
 
 /* Inicio Section Somos */
-.index-section-somos {
+.index-somos {
     background-color: $secundary-color;
     display: grid;
     padding: 5%;

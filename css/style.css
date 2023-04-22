@@ -24,7 +24,7 @@ body h2 {
 }
 body h3 {
   font-family: "gugi";
-  font-size: 20px;
+  font-size: 25px;
   margin: 0;
 }
 body h1,
@@ -57,7 +57,7 @@ body label {
   box-shadow: 0 2px 10px #888787;
   position: fixed;
   width: 100%;
-  z-index: 100;
+  z-index: 1000;
 }
 .nav-bg-custom #navbarNav {
   justify-content: center;
@@ -150,11 +150,12 @@ body label {
   position: relative;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 90%;
+  box-shadow: 0 0 10px #000000;
 }
 .card-perfil .card-perfil__description {
-  background-color: #374151;
-  border: 2px solid #FCE44D;
+  background-color: grey;
   border-radius: 16px;
+  box-shadow: inset 0 0 10px #000000;
   color: #eee;
   display: flex;
   flex-direction: column;
@@ -170,7 +171,8 @@ body label {
 }
 .card-perfil .card-perfil__description .description__text-body {
   font-size: 15px;
-  line-height: 1.5;
+}
+.card-perfil .card-perfil__description .description__text-body li {
   margin-top: 20px;
 }
 .card-perfil .card-perfil__image {
@@ -192,37 +194,38 @@ body label {
 
 /* Contacto Section-1 */
 .contacto__portada {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/contacto.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 10px #000000;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/contacto.jpg);
-  background-size: cover;
-  background-position: center;
 }
 
 /* Contacto Section-2 */
 .contacto__contenido {
   display: grid;
+  gap: 5%;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "cont1" "cont2";
   justify-content: center;
   padding: 5%;
-  gap: 5%;
 }
 .contacto__contenido h1 {
-  font-size: 40px;
   color: #FCE44D;
+  font-size: 40px;
 }
 .contacto__contenido .contenido__escribinos {
   align-items: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  grid-area: cont1;
   border: 1px solid #FCE44D;
   border-radius: 10px;
-  padding: 2% 5%;
   gap: 10px;
+  grid-area: cont1;
+  padding: 2% 5%;
 }
 .contacto__contenido .contenido__escribinos input {
   background-color: rgb(174, 174, 174);
@@ -231,18 +234,18 @@ body label {
   background-color: #eee;
 }
 .contacto__contenido .contenido__escribinos #caja-mensaje {
-  resize: none;
   background-color: rgb(174, 174, 174);
+  resize: none;
 }
 .contacto__contenido .contenido__nuestros-datos {
   align-items: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  grid-area: cont2;
-  gap: 10px;
   border: 1px solid #FCE44D;
   border-radius: 10px;
+  gap: 10px;
+  grid-area: cont2;
   padding: 2% 5%;
 }
 .contacto__contenido .contenido__nuestros-datos h2 {
@@ -274,14 +277,14 @@ body label {
 }
 
 /* Inicio Section Portada */
-.index-section-portada {
+.index-portada {
   align-items: center;
   display: flex;
   justify-content: center;
   min-height: 100vh;
   position: relative;
 }
-.index-section-portada .portada__video video {
+.index-portada .portada__video video {
   filter: brightness(0.35);
   height: 100vh;
   object-fit: cover;
@@ -290,26 +293,26 @@ body label {
   left: 0;
   width: 100%;
 }
-.index-section-portada .portada__text {
+.index-portada .portada__text {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 30px;
   margin-top: 100px;
 }
-.index-section-portada h1 {
+.index-portada h1 {
   color: #eee;
   font-size: 45px;
   position: relative;
 }
-.index-section-portada img {
+.index-portada img {
   height: 200px;
   position: relative;
   width: 200px;
 }
 
 /* Inicio Section Contenido */
-.index-section-contenido {
+.index-contenido {
   align-items: center;
   display: grid;
   gap: 5%;
@@ -318,7 +321,7 @@ body label {
   grid-template-areas: "b1 b1 b1 b2 b2";
   padding: 5%;
 }
-.index-section-contenido .contenido__body-texto {
+.index-contenido .contenido__body-texto {
   align-items: flex-start;
   display: flex;
   flex-direction: column;
@@ -326,18 +329,18 @@ body label {
   gap: 20px;
   grid-area: b1;
 }
-.index-section-contenido .contenido__body-texto h2 {
+.index-contenido .contenido__body-texto h2 {
   color: #FCE44D;
 }
-.index-section-contenido .contenido__body-texto p {
+.index-contenido .contenido__body-texto p {
   color: #eee;
 }
-.index-section-contenido .contenido__body-imagen {
+.index-contenido .contenido__body-imagen {
   grid-area: b2;
   height: 100%;
   width: 100%;
 }
-.index-section-contenido .contenido__body-imagen img {
+.index-contenido .contenido__body-imagen img {
   box-shadow: 5px 5px 10px #000000;
   height: 100%;
   width: 100%;
@@ -345,7 +348,7 @@ body label {
 }
 
 /* Inicio Section Somos */
-.index-section-somos {
+.index-somos {
   background-color: #FCE44D;
   display: grid;
   padding: 5%;
@@ -353,14 +356,14 @@ body label {
   grid-template-rows: auto;
   grid-template-areas: "s1 s2";
 }
-.index-section-somos img {
+.index-somos img {
   box-shadow: 5px 5px 10px #000000;
   grid-area: s1;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
-.index-section-somos .somos__body-texto {
+.index-somos .somos__body-texto {
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -376,17 +379,18 @@ body label {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: relative;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/nosotros.jpg);
+  background-position: center;
+  background-size: cover;
+  box-shadow: inset 0 0 10px #000000;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url(../multimedia/img/nosotros.jpg);
-  background-size: cover;
-  background-position: center;
+  position: relative;
 }
 .nosotros-portada h1 {
+  color: #eee;
   font-size: 75px;
   position: relative;
-  color: #eee;
 }
 
 .nosotros__contenido {
@@ -394,8 +398,8 @@ body label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-top: 5%;
   gap: 50px;
+  margin-top: 5%;
 }
 .nosotros__contenido .contenido__historia {
   align-items: center;
@@ -414,13 +418,13 @@ body label {
   font-size: 20px;
 }
 .nosotros__contenido .contenido__integrantes {
-  justify-items: center;
-  width: 100%;
-  height: 150vh;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "i1 i2 i3 i4" "i5 i6 i7 i8";
+  height: 150vh;
+  width: 100%;
+  justify-items: center;
 }
 .nosotros__contenido .contenido__integrantes .perfil1 {
   grid-area: i1;
@@ -452,8 +456,8 @@ body label {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-top: 100px;
   gap: 30px;
+  padding-top: 100px;
 }
 .porfolio__contenido h1 {
   color: #FCE44D;
@@ -465,18 +469,18 @@ body label {
   grid-template-areas: "br1 br2 br3" "br4 br5 br6" "br7 br8 br12" "br10 br11 br9";
 }
 .porfolio__contenido .contenido__cards .brand {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  filter: grayscale(1) blur(1px) brightness(0.55);
   border: 2px solid #374151;
+  filter: grayscale(1) blur(1px) brightness(0.55);
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .porfolio__contenido .contenido__cards .brand:hover {
+  border: 2px solid #FCE44D;
+  border-radius: 20px;
   filter: grayscale(0);
   transform: scale(1.1, 1.1);
   z-index: 10;
-  border: 2px solid #FCE44D;
-  border-radius: 20px;
 }
 .porfolio__contenido .contenido__cards .br1 {
   grid-area: br1;
@@ -524,17 +528,18 @@ body label {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  position: relative;
-  height: 100vh;
-  width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url(../multimedia/img/servicios.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/servicios.jpg);
   background-size: cover;
   background-position: center;
+  box-shadow: inset 0 0 10px #000000;
+  height: 100vh;
+  width: 100%;
+  position: relative;
 }
 .servicios-portada h1 {
+  color: #eee;
   font-size: 75px;
   position: relative;
-  color: #eee;
 }
 
 /* Servicios Section-2 */
@@ -542,17 +547,17 @@ body label {
   margin-top: 5%;
 }
 .servicios__contenido h2 {
-  text-align: center;
   color: #FCE44D;
+  text-align: center;
 }
 .servicios__contenido .contenido__cards {
-  margin-top: 5%;
   display: grid;
+  gap: 50px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "c1 c2" "c3 c4" "c5 c6";
   justify-items: center;
-  gap: 50px;
+  margin-top: 5%;
 }
 .servicios__contenido .contenido__cards .card {
   border: 2px solid #FCE44D;
