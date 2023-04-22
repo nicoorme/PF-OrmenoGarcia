@@ -1,0 +1,51 @@
+.card-perfil {
+    height: 90%;
+    width: 90%;
+    position: relative;
+    transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+    border-radius: 16px;
+    overflow: hidden;
+
+    .card-perfil__description {
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+        padding: 16px;
+        gap: 8px;
+        display: flex;
+        flex-direction: column;
+        background-color: $main-color;
+        color: $light-color;
+        border: 2px solid $secundary-color;
+        border-radius: 16px;
+
+        .description__text-title {
+            color: $secundary-color;
+            font-weight: 700;
+        }
+
+        .description__text-body {
+            font-size: 15px;
+            line-height: 1.5;
+        }
+    }
+
+    .card-perfil__image {
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        bottom: 0;
+        transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+    }
+}
+
+.card-perfil:hover .card-perfil__image {
+    transform: translateY(100%);
+}

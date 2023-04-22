@@ -37,50 +37,14 @@
 
     .contenido__integrantes {
         width: 100%;
+        height: 150vh;
+        padding: 5%;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         grid-template-rows: auto;
         grid-template-areas:
             'i1 i2 i3 i4'
             'i5 i6 i7 i8';
-
-        .flip-box {
-            transform-style: preserve-3d;
-            perspective: 1000px;
-            margin: 10px;
-
-            .foto1 {
-                background-image: url(../multimedia/img/personas/p1.jpg);
-            }
-
-            .foto2 {
-                background-image: url(../multimedia/img/personas/p2.jpg);
-            }
-
-            .foto3 {
-                background-image: url(../multimedia/img/personas/p3.jpg);
-            }
-
-            .foto4 {
-                background-image: url(../multimedia/img/personas/p4.jpg);
-            }
-
-            .foto5 {
-                background-image: url(../multimedia/img/personas/p5.jpg);
-            }
-
-            .foto6 {
-                background-image: url(../multimedia/img/personas/p6.jpg);
-            }
-
-            .foto7 {
-                background-image: url(../multimedia/img/personas/p7.jpg);
-            }
-
-            .foto8 {
-                background-image: url(../multimedia/img/personas/p8.jpg);
-            }
-        }
 
         .perfil1 {
             grid-area: i1;
@@ -113,52 +77,5 @@
         .perfil8 {
             grid-area: i8;
         }
-    }
-
-    .flip-box-front,
-    .flip-box-back {
-        background-size: cover;
-        background-position: center;
-        border-radius: 8px;
-        min-height: 450px;
-        transition: transform 1s cubic-bezier(.4, .2, .2, 1);
-        backface-visibility: hidden;
-    }
-
-    .flip-box-front {
-        transform: rotateY(0deg);
-        transform-style: preserve-3d;
-    }
-
-    .flip-box:hover .flip-box-front {
-        transform: rotateY(-180deg);
-        transform-style: preserve-3d;
-    }
-
-    .flip-box-back {
-        @include flex(column, flex-start, center);
-        gap: 20px;
-        background-color: $secundary-color;
-        position: absolute;
-        top: 0;
-        left: 0;
-        transform: rotateY(180deg);
-        transform-style: preserve-3d;
-        padding: 20px;
-
-        h3,
-        h4 {
-            color: $dark-text-color;
-        }
-
-        p {
-            color: $dark-text-color;
-            font-size: 15px;
-        }
-    }
-
-    .flip-box:hover .flip-box-back {
-        transform: rotateY(0deg);
-        transform-style: preserve-3d;
     }
 }

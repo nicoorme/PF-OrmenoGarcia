@@ -22,6 +22,11 @@ body h2 {
   font-size: 40px;
   margin: 0;
 }
+body h3 {
+  font-family: "gugi";
+  font-size: 20px;
+  margin: 0;
+}
 body h1,
 body h2,
 body h3,
@@ -112,20 +117,72 @@ body a {
 }
 
 .button {
-  width: fit-content;
-  font-size: 20px;
-  padding: 10px 20px;
-  background: linear-gradient(to right, transparent 50%, #FCE44D 50%) left/250%;
-  border: 2px solid #FCE44D;
+  z-index: 100;
+  font-family: "oswald";
+  padding: 1em 2.5em;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  color: #000;
+  background-color: #fff;
+  border: none;
   border-radius: 12px;
-  color: #FCE44D;
-  transition: 0.7s;
-  z-index: 10;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease 0s;
   cursor: pointer;
 }
 .button:hover {
-  background-position: right;
-  color: #191919;
+  background-color: #FCE44D;
+  box-shadow: 0px 15px 20px rgba(102, 96, 19, 0.723);
+  color: #000000;
+  transform: translateY(-7px);
+}
+
+.card-perfil {
+  height: 90%;
+  width: 90%;
+  position: relative;
+  transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+.card-perfil .card-perfil__description {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  padding: 16px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  background-color: #374151;
+  color: #eee;
+  border: 2px solid #FCE44D;
+  border-radius: 16px;
+}
+.card-perfil .card-perfil__description .description__text-title {
+  color: #FCE44D;
+  font-weight: 700;
+}
+.card-perfil .card-perfil__description .description__text-body {
+  font-size: 15px;
+  line-height: 1.5;
+}
+.card-perfil .card-perfil__image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  bottom: 0;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+.card-perfil .card-perfil__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.card-perfil:hover .card-perfil__image {
+  transform: translateY(100%);
 }
 
 /* Contacto Section-1 */
@@ -350,39 +407,12 @@ body a {
 }
 .nosotros__contenido .contenido__integrantes {
   width: 100%;
+  height: 150vh;
+  padding: 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "i1 i2 i3 i4" "i5 i6 i7 i8";
-}
-.nosotros__contenido .contenido__integrantes .flip-box {
-  transform-style: preserve-3d;
-  perspective: 1000px;
-  margin: 10px;
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto1 {
-  background-image: url(../multimedia/img/personas/p1.jpg);
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto2 {
-  background-image: url(../multimedia/img/personas/p2.jpg);
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto3 {
-  background-image: url(../multimedia/img/personas/p3.jpg);
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto4 {
-  background-image: url(../multimedia/img/personas/p4.jpg);
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto5 {
-  background-image: url(../multimedia/img/personas/p5.jpg);
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto6 {
-  background-image: url(../multimedia/img/personas/p6.jpg);
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto7 {
-  background-image: url(../multimedia/img/personas/p7.jpg);
-}
-.nosotros__contenido .contenido__integrantes .flip-box .foto8 {
-  background-image: url(../multimedia/img/personas/p8.jpg);
 }
 .nosotros__contenido .contenido__integrantes .perfil1 {
   grid-area: i1;
@@ -407,49 +437,6 @@ body a {
 }
 .nosotros__contenido .contenido__integrantes .perfil8 {
   grid-area: i8;
-}
-.nosotros__contenido .flip-box-front,
-.nosotros__contenido .flip-box-back {
-  background-size: cover;
-  background-position: center;
-  border-radius: 8px;
-  min-height: 450px;
-  transition: transform 1s cubic-bezier(0.4, 0.2, 0.2, 1);
-  backface-visibility: hidden;
-}
-.nosotros__contenido .flip-box-front {
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
-}
-.nosotros__contenido .flip-box:hover .flip-box-front {
-  transform: rotateY(-180deg);
-  transform-style: preserve-3d;
-}
-.nosotros__contenido .flip-box-back {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 20px;
-  background-color: #FCE44D;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform: rotateY(180deg);
-  transform-style: preserve-3d;
-  padding: 20px;
-}
-.nosotros__contenido .flip-box-back h3,
-.nosotros__contenido .flip-box-back h4 {
-  color: #000000;
-}
-.nosotros__contenido .flip-box-back p {
-  color: #000000;
-  font-size: 15px;
-}
-.nosotros__contenido .flip-box:hover .flip-box-back {
-  transform: rotateY(0deg);
-  transform-style: preserve-3d;
 }
 
 .porfolio__contenido {
