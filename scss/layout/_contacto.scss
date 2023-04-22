@@ -1,15 +1,14 @@
 /* Contacto Section-1 */
-.contacto-section-1 .portada__imagen {
-    background-image: url(../multimedia/img/contacto.jpg);
-    background-position: center;
-    background-size:cover;
-    background-repeat: no-repeat;
-    width: 100%;
+.contacto__portada {
     height: 100vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/contacto.jpg);
+    background-size: cover;
+    background-position: center;
 }
 
 /* Contacto Section-2 */
-.contacto-section-2 {
+.contacto__contenido {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     grid-template-rows: auto;
@@ -20,26 +19,35 @@
     padding: 5%;
     gap: 5%;
 
-    h2 {
+    h1 {
         font-size: 40px;
         color: $secundary-color;
     }
 
-    .escribinos {
+    .contenido__escribinos {
         @include flex (column, space-between, space-between);
         grid-area: cont1;
         border: 1px solid $secundary-color;
         border-radius: 10px;
         padding: 2% 5%;
-
         gap: 10px;
+
+        input {
+            background-color: rgb(174, 174, 174);
+
+// todo CAMBIAR ACTIVE POR FIJO
+            &:active {
+                background-color: $light-color;
+            }
+        }
 
         #caja-mensaje {
             resize: none;
+            background-color: rgb(174, 174, 174);
         }
     }
 
-    .nuestros-datos {
+    .contenido__nuestros-datos {
         @include flex (column, space-between, space-between);
         grid-area: cont2;
         gap: 10px;
@@ -47,16 +55,11 @@
         border-radius: 10px;
         padding: 2% 5%;
 
-        label {
-            font-size: 24px;
+        h2 {
+            color: $secundary-color;
         }
 
-        a {
-            text-decoration: none;
-            color: $light-text-color;
-        }
-
-        .nuestros-datos__contenido {
+        .nuestros-datos__info {
             @include flex (row, space-between, flex-start);
 
             .contacto-datos {

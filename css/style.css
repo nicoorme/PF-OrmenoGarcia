@@ -47,6 +47,10 @@ body a {
   color: #eee;
   cursor: pointer;
 }
+body label {
+  font-size: 24px;
+  color: #eee;
+}
 
 .nav-bg-custom {
   background-color: #374151;
@@ -67,6 +71,7 @@ body a {
   color: #eee;
   transition: 0.5s;
   padding: 15px 30px;
+  font-size: 20px;
 }
 .nav-bg-custom #navbarNav .navbar-nav .nav-link:hover {
   color: #FCE44D;
@@ -152,7 +157,6 @@ body a {
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   padding: 16px;
-  gap: 8px;
   display: flex;
   flex-direction: column;
   background-color: #374151;
@@ -165,6 +169,7 @@ body a {
   font-weight: 700;
 }
 .card-perfil .card-perfil__description .description__text-body {
+  margin-top: 20px;
   font-size: 15px;
   line-height: 1.5;
 }
@@ -181,22 +186,21 @@ body a {
   object-fit: cover;
 }
 
-.card-perfil:hover .card-perfil__image {
+.card-perfil:hover:hover .card-perfil__image {
   transform: translateY(100%);
 }
 
 /* Contacto Section-1 */
-.contacto-section-1 .portada__imagen {
-  background-image: url(../multimedia/img/contacto.jpg);
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-  width: 100%;
+.contacto__portada {
   height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/contacto.jpg);
+  background-size: cover;
+  background-position: center;
 }
 
 /* Contacto Section-2 */
-.contacto-section-2 {
+.contacto__contenido {
   display: grid;
   grid-template-columns: repeat(1, 1fr);
   grid-template-rows: auto;
@@ -205,11 +209,11 @@ body a {
   padding: 5%;
   gap: 5%;
 }
-.contacto-section-2 h2 {
+.contacto__contenido h1 {
   font-size: 40px;
   color: #FCE44D;
 }
-.contacto-section-2 .escribinos {
+.contacto__contenido .contenido__escribinos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -220,10 +224,17 @@ body a {
   padding: 2% 5%;
   gap: 10px;
 }
-.contacto-section-2 .escribinos #caja-mensaje {
-  resize: none;
+.contacto__contenido .contenido__escribinos input {
+  background-color: rgb(174, 174, 174);
 }
-.contacto-section-2 .nuestros-datos {
+.contacto__contenido .contenido__escribinos input:active {
+  background-color: #eee;
+}
+.contacto__contenido .contenido__escribinos #caja-mensaje {
+  resize: none;
+  background-color: rgb(174, 174, 174);
+}
+.contacto__contenido .contenido__nuestros-datos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -234,34 +245,30 @@ body a {
   border-radius: 10px;
   padding: 2% 5%;
 }
-.contacto-section-2 .nuestros-datos label {
-  font-size: 24px;
+.contacto__contenido .contenido__nuestros-datos h2 {
+  color: #FCE44D;
 }
-.contacto-section-2 .nuestros-datos a {
-  text-decoration: none;
-  color: #eee;
-}
-.contacto-section-2 .nuestros-datos .nuestros-datos__contenido {
+.contacto__contenido .contenido__nuestros-datos .nuestros-datos__info {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
 }
-.contacto-section-2 .nuestros-datos .nuestros-datos__contenido .contacto-datos {
+.contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .contacto-datos {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
   gap: 5px;
 }
-.contacto-section-2 .nuestros-datos .nuestros-datos__contenido .nuestras-redes {
+.contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .nuestras-redes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
   gap: 25px;
 }
-.contacto-section-2 .nuestros-datos .nuestros-datos__contenido .nuestras-redes img {
+.contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .nuestras-redes img {
   height: 30px;
   width: 30px;
 }
@@ -372,7 +379,7 @@ body a {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url(../multimedia/img/nosotros.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url(../multimedia/img/nosotros.jpg);
   background-size: cover;
   background-position: center;
 }
@@ -404,11 +411,12 @@ body a {
 }
 .nosotros__contenido .contenido__historia p {
   color: #eee;
+  font-size: 20px;
 }
 .nosotros__contenido .contenido__integrantes {
+  justify-items: center;
   width: 100%;
   height: 150vh;
-  padding: 5%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
@@ -460,7 +468,7 @@ body a {
   object-fit: cover;
   width: 100%;
   height: 100%;
-  filter: grayscale(1) blur(1px);
+  filter: grayscale(1) blur(1px) brightness(0.55);
   border: 2px solid #374151;
 }
 .porfolio__contenido .contenido__cards .brand:hover {
@@ -519,7 +527,7 @@ body a {
   position: relative;
   height: 100vh;
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.35)), url(../multimedia/img/servicios.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.35)), url(../multimedia/img/servicios.jpg);
   background-size: cover;
   background-position: center;
 }
