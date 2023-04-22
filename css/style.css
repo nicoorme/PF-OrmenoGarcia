@@ -39,6 +39,7 @@ body p {
   cursor: default;
   font-family: sans-serif;
   font-size: 16px;
+  font-weight: 300;
   line-height: 2;
   margin: 0;
 }
@@ -174,27 +175,28 @@ body label {
   box-shadow: 0 0 10px #000000;
 }
 .card-perfil .card-perfil__description {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: grey;
   border-radius: 16px;
   box-shadow: inset 0 0 10px #000000;
   color: #eee;
-  display: flex;
-  flex-direction: column;
   height: 100%;
-  padding: 16px;
+  padding: 25px 16px;
   position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%;
 }
-.card-perfil .card-perfil__description .description__text-title {
+.card-perfil .card-perfil__description h3 {
   color: #FCE44D;
+  font-family: "oswald";
   font-weight: 700;
 }
-.card-perfil .card-perfil__description .description__text-body {
-  font-size: 15px;
-}
-.card-perfil .card-perfil__description .description__text-body li {
-  margin-top: 20px;
+.card-perfil .card-perfil__description p {
+  font-size: 16px;
+  margin-top: 10px;
 }
 .card-perfil .card-perfil__image {
   bottom: 0;
@@ -204,13 +206,14 @@ body label {
   width: 100%;
 }
 .card-perfil .card-perfil__image img {
+  border-radius: 16px;
   height: 100%;
   object-fit: cover;
   width: 100%;
 }
 
 .card-perfil:hover:hover .card-perfil__image {
-  transform: translateY(100%);
+  transform: translateY(25%);
 }
 
 /* Contacto Section-1 */
@@ -396,7 +399,7 @@ body label {
   padding: 0 10%;
 }
 
-/* Nosotros Section-1 */
+/* Nosotros Section Portada */
 .nosotros-portada {
   align-items: center;
   display: flex;

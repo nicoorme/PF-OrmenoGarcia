@@ -36,29 +36,26 @@
 
 
     .card-perfil__description {
+        @include flex (column, flex-start, flex-start);
         background-color: grey;
         border-radius: 16px;
         box-shadow: inset 0 0 10px $dark-color;
         color: $light-color;
-        display: flex;
-        flex-direction: column;
         height: 100%;
-        padding: 16px;
+        padding: 25px 16px;
         position: absolute;
         transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
         width: 100%;
 
-        .description__text-title {
+        h3 {
             color: $secundary-color;
+            font-family: 'oswald';
             font-weight: 700;
         }
 
-        .description__text-body {
-            font-size: 15px;
-
-            li {
-                margin-top: 20px;
-            }
+        p {
+            font-size: 16px;
+            margin-top: 10px;
         }
     }
 
@@ -70,6 +67,7 @@
         width: 100%;
 
         img {
+            border-radius: 16px;
             height: 100%;
             object-fit: cover;
             width: 100%;
@@ -78,5 +76,5 @@
 }
 
 .card-perfil:hover:hover .card-perfil__image {
-    transform: translateY(100%);
+    transform: translateY(25%);
 }

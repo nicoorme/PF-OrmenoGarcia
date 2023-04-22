@@ -1,4 +1,4 @@
-/* Nosotros Section-1 */
+/* Nosotros Section Portada */
 .nosotros-portada {
     @include flex(row, center, center);
     background-image: linear-gradient(rgba(0, 0, 0, .55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/nosotros.jpg);
@@ -17,6 +17,7 @@
     }
 }
 
+// Nosotros Section Contenido
 .nosotros__contenido {
     @include flex (column, center, center);
     gap: 50px;
