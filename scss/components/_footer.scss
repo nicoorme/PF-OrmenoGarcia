@@ -4,8 +4,8 @@
     padding: 10px 0;
 
     hr {
-        width: 75%;
         border: 2px solid $secundary-color;
+        width: 75%;
     }
 
     a {
@@ -13,8 +13,8 @@
         transition: 0.3s;
 
         &:hover {
-            transform: scale(1.1, 1.1);
             color: $secundary-color;
+            transform: scale(1.1, 1.1);
         }
     }
 
@@ -28,8 +28,8 @@
             transition: 0.3s;
 
             img {
-                width: 28px;
                 height: auto;
+                width: 28px;
             }
 
             p {

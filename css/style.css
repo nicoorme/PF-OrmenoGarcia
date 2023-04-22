@@ -36,27 +36,27 @@ body h6 {
   cursor: default;
 }
 body p {
+  cursor: default;
   font-family: sans-serif;
   font-size: 16px;
-  margin: 0;
   line-height: 2;
-  cursor: default;
+  margin: 0;
 }
 body a {
-  text-decoration: none;
   color: #eee;
   cursor: pointer;
+  text-decoration: none;
 }
 body label {
-  font-size: 24px;
   color: #eee;
+  font-size: 24px;
 }
 
 .nav-bg-custom {
   background-color: #374151;
+  box-shadow: 0 2px 10px #888787;
   position: fixed;
   width: 100%;
-  box-shadow: 0 2px 10px #888787;
   z-index: 100;
 }
 .nav-bg-custom #navbarNav {
@@ -67,11 +67,11 @@ body label {
   min-height: 50px;
 }
 .nav-bg-custom #navbarNav .navbar-nav .nav-link {
-  position: relative;
   color: #eee;
-  transition: 0.5s;
-  padding: 15px 30px;
   font-size: 20px;
+  padding: 15px 30px;
+  position: relative;
+  transition: 0.5s;
 }
 .nav-bg-custom #navbarNav .navbar-nav .nav-link:hover {
   color: #FCE44D;
@@ -79,40 +79,40 @@ body label {
 }
 
 .footer {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 20px;
   padding: 10px 0;
 }
 .footer hr {
-  width: 75%;
   border: 2px solid #FCE44D;
+  width: 75%;
 }
 .footer a {
   font-size: 40px;
   transition: 0.3s;
 }
 .footer a:hover {
-  transform: scale(1.1, 1.1);
   color: #FCE44D;
+  transform: scale(1.1, 1.1);
 }
 .footer .redes-footer {
   display: flex;
   gap: 50px;
 }
 .footer .redes-footer .redes {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   gap: 5px;
   transition: 0.3s;
 }
 .footer .redes-footer .redes img {
-  width: 28px;
   height: auto;
+  width: 28px;
 }
 .footer .redes-footer .redes p {
   font-size: 12px;
@@ -122,19 +122,19 @@ body label {
 }
 
 .button {
-  z-index: 100;
-  font-family: "oswald";
-  padding: 1em 2.5em;
-  font-size: 14px;
-  text-transform: uppercase;
-  letter-spacing: 2.5px;
-  color: #000;
   background-color: #fff;
   border: none;
   border-radius: 12px;
   box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease 0s;
+  color: #000;
   cursor: pointer;
+  font-family: "oswald";
+  font-size: 18px;
+  font-weight: 400;
+  letter-spacing: 2.5px;
+  padding: 12px 24px;
+  transition: all 0.3s ease 0s;
+  z-index: 100;
 }
 .button:hover {
   background-color: #FCE44D;
@@ -144,46 +144,46 @@ body label {
 }
 
 .card-perfil {
+  border-radius: 16px;
   height: 90%;
-  width: 90%;
+  overflow: hidden;
   position: relative;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  border-radius: 16px;
-  overflow: hidden;
+  width: 90%;
 }
 .card-perfil .card-perfil__description {
-  height: 100%;
-  width: 100%;
-  position: absolute;
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
-  padding: 16px;
-  display: flex;
-  flex-direction: column;
   background-color: #374151;
-  color: #eee;
   border: 2px solid #FCE44D;
   border-radius: 16px;
+  color: #eee;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 16px;
+  position: absolute;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
 }
 .card-perfil .card-perfil__description .description__text-title {
   color: #FCE44D;
   font-weight: 700;
 }
 .card-perfil .card-perfil__description .description__text-body {
-  margin-top: 20px;
   font-size: 15px;
   line-height: 1.5;
+  margin-top: 20px;
 }
 .card-perfil .card-perfil__image {
-  position: absolute;
-  height: 100%;
-  width: 100%;
   bottom: 0;
+  height: 100%;
+  position: absolute;
   transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
+  width: 100%;
 }
 .card-perfil .card-perfil__image img {
-  width: 100%;
   height: 100%;
   object-fit: cover;
+  width: 100%;
 }
 
 .card-perfil:hover:hover .card-perfil__image {
@@ -214,10 +214,10 @@ body label {
   color: #FCE44D;
 }
 .contacto__contenido .contenido__escribinos {
+  align-items: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
   grid-area: cont1;
   border: 1px solid #FCE44D;
   border-radius: 10px;
@@ -235,10 +235,10 @@ body label {
   background-color: rgb(174, 174, 174);
 }
 .contacto__contenido .contenido__nuestros-datos {
+  align-items: space-between;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: space-between;
   grid-area: cont2;
   gap: 10px;
   border: 1px solid #FCE44D;
@@ -249,23 +249,23 @@ body label {
   color: #FCE44D;
 }
 .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
 }
 .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .contacto-datos {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
   gap: 5px;
 }
 .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .nuestras-redes {
+  align-items: flex-start;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: flex-start;
   gap: 25px;
 }
 .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .nuestras-redes img {
@@ -275,56 +275,56 @@ body label {
 
 /* Inicio Section Portada */
 .index-section-portada {
+  align-items: center;
   display: flex;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
   position: relative;
 }
 .index-section-portada .portada__video video {
+  filter: brightness(0.35);
+  height: 100vh;
+  object-fit: cover;
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
-  object-fit: cover;
-  filter: brightness(0.35);
 }
 .index-section-portada .portada__text {
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
   gap: 30px;
   margin-top: 100px;
 }
 .index-section-portada h1 {
-  position: relative;
   color: #eee;
   font-size: 45px;
+  position: relative;
 }
 .index-section-portada img {
+  height: 200px;
   position: relative;
   width: 200px;
-  height: 200px;
 }
 
 /* Inicio Section Contenido */
 .index-section-contenido {
-  padding: 5%;
+  align-items: center;
   display: grid;
   gap: 5%;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "b1 b1 b1 b2 b2";
-  align-items: center;
+  padding: 5%;
 }
 .index-section-contenido .contenido__body-texto {
+  align-items: flex-start;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: flex-start;
-  grid-area: b1;
   gap: 20px;
+  grid-area: b1;
 }
 .index-section-contenido .contenido__body-texto h2 {
   color: #FCE44D;
@@ -338,44 +338,44 @@ body label {
   width: 100%;
 }
 .index-section-contenido .contenido__body-imagen img {
+  box-shadow: 5px 5px 10px #000000;
   height: 100%;
   width: 100%;
   object-fit: cover;
-  box-shadow: 5px 5px 10px #000000;
 }
 
 /* Inicio Section Somos */
 .index-section-somos {
-  padding: 5%;
   background-color: #FCE44D;
   display: grid;
+  padding: 5%;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
   grid-template-areas: "s1 s2";
 }
 .index-section-somos img {
-  grid-area: s1;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
   box-shadow: 5px 5px 10px #000000;
+  grid-area: s1;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 .index-section-somos .somos__body-texto {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  align-items: center;
-  padding: 0 10%;
-  grid-area: s2;
   gap: 15px;
+  grid-area: s2;
+  padding: 0 10%;
 }
 
 /* Nosotros Section-1 */
 .nosotros-portada {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -390,18 +390,18 @@ body label {
 }
 
 .nosotros__contenido {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   margin-top: 5%;
   gap: 50px;
 }
 .nosotros__contenido .contenido__historia {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   gap: 20px;
   padding: 0 5%;
   text-align: center;
@@ -448,10 +448,10 @@ body label {
 }
 
 .porfolio__contenido {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   padding-top: 100px;
   gap: 30px;
 }
@@ -520,10 +520,10 @@ body label {
 
 /* Inicio Section-1 */
 .servicios-portada {
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: center;
   position: relative;
   height: 100vh;
   width: 100%;
@@ -629,10 +629,10 @@ body label {
   }
   .contenido,
   .index-section-3 {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     gap: 5px;
   }
   .body-texto {
@@ -658,10 +658,10 @@ body label {
     font-size: 36px;
   }
   .servicios-section-2 {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
   }
   .nosotros-section-2 .integrantes {
     width: 100%;
@@ -697,10 +697,10 @@ body label {
 }
 @media screen and (max-width: 500px) {
   .index-section-1 .portada {
+    align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: center;
   }
   .index-section-1 .portada__body {
     align-items: center;
@@ -721,10 +721,10 @@ body label {
   .nosotros-section-1 .portada,
   .nosotros-section-2 .integrantes,
   .porfolio-section-1 {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
   }
   .servicios-section-1 .portada .servicios-section-1 .portada__body h1,
   .servicios-section-1 .portada .nosotros-section-1 .portada__body h1,
@@ -741,10 +741,10 @@ body label {
   .nosotros-section-1 .portada .nuestros-datos__contenido,
   .nosotros-section-2 .integrantes .nuestros-datos__contenido,
   .porfolio-section-1 .nuestros-datos__contenido {
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-items: flex-start;
     gap: 20px;
   }
   .servicios-section-1 .portada .contacto-section-2 h2,
