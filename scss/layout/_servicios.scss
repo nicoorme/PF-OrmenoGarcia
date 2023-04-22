@@ -1,4 +1,4 @@
-/* Inicio Section-1 */
+/* Servicios Section Portada*/
 .servicios-portada {
     @include flex(row, center, center);
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/servicios.jpg);
@@ -16,7 +16,7 @@
     }
 }
 
-/* Servicios Section-2 */
+/* Servicios Section Contenido */
 .servicios__contenido {
     margin-top: 5%;
 

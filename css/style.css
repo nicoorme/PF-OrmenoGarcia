@@ -545,7 +545,7 @@ body label {
   grid-area: br13;
 }
 
-/* Inicio Section-1 */
+/* Servicios Section Portada*/
 .servicios-portada {
   align-items: center;
   display: flex;
@@ -565,7 +565,7 @@ body label {
   position: relative;
 }
 
-/* Servicios Section-2 */
+/* Servicios Section Contenido */
 .servicios__contenido {
   margin-top: 5%;
 }
