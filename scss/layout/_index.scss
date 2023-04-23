@@ -143,21 +143,6 @@
 
         // *fin media
 
-        h2 {
-
-            // *media
-            @include tablet {
-                font-size: 30px;
-            }
-
-            @include mobile {
-                font-size: 24px;
-            }
-
-            // *fin media
-
-        }
-
         p {
 
             // *media

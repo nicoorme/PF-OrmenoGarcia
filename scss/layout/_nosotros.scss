@@ -8,12 +8,28 @@
     height: 100vh;
     width: 100%;
     position: relative;
+    text-align: center;
+
+    // *media
+    @include mobile {
+        height: 60vh;
+    }
+
+    // *fin media
 
 
     h1 {
         color: $light-color;
         font-size: 75px;
         position: relative;
+
+        // *media
+        @include tablet {
+            font-size: 45px;
+        }
+
+        // *fin media
+
     }
 }
 
@@ -35,18 +51,46 @@
 
         p {
             color: $light-color;
-            font-size: 20px
+            font-size: 18px;
+
+            // *media
+            @include mobile {
+                font-size: 15px;
+                line-height: 1.25;
+                margin: 2% 0;
+            }
+
+            // *fin media
         }
     }
 
     .contenido__integrantes {
         @include grid (repeat(4, 1fr));
+        gap: 5% 0;
         grid-template-areas:
             'i1 i2 i3 i4'
             'i5 i6 i7 i8';
-        height: 150vh;
+        height: 100%;
         width: 100%;
         justify-items: center;
+
+        // *media
+        @include tablet {
+            @include grid (repeat(2, 1fr));
+            gap: 5px 0;
+            grid-template-areas:
+                'i1 i2'
+                'i3 i4'
+                'i5 i6'
+                'i7 i8';
+
+            @include mobile {
+                @include flex(column, flex-start, center)
+            }
+
+            // *fin media
+
+        }
 
         .perfil1 {
             grid-area: i1;

@@ -170,7 +170,7 @@ body label {
 }
 
 .card-servicios {
-  width: 90%;
+  width: 100%;
   border: 2px solid #FCE44D;
   box-shadow: 3px 3px 15px #000000;
 }
@@ -193,10 +193,10 @@ body label {
 .card-perfil {
   border-radius: 16px;
   height: 90%;
+  width: 90%;
   overflow: hidden;
   position: relative;
   transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
-  width: 90%;
   box-shadow: 0 0 10px #000000;
 }
 .card-perfil .card-perfil__description {
@@ -205,14 +205,13 @@ body label {
   flex-direction: column;
   justify-content: flex-start;
   background-color: grey;
-  border-radius: 16px;
   box-shadow: inset 0 0 10px #000000;
   color: #eee;
   height: 100%;
-  padding: 25px 16px;
-  position: absolute;
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%;
+  padding: 25px 16px;
+  position: relative;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .card-perfil .card-perfil__description h3 {
   color: #FCE44D;
@@ -226,9 +225,9 @@ body label {
 .card-perfil .card-perfil__image {
   bottom: 0;
   height: 100%;
-  position: absolute;
-  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%;
+  position: sticky;
+  transition: all 1s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 .card-perfil .card-perfil__image img {
   border-radius: 16px;
@@ -237,8 +236,13 @@ body label {
   width: 100%;
 }
 
-.card-perfil:hover:hover .card-perfil__image {
+.card-perfil:hover .card-perfil__image {
   transform: translateY(25%);
+}
+@media screen and (max-width: 576px) {
+  .card-perfil:hover .card-perfil__image {
+    transform: none;
+  }
 }
 
 /* Contacto Section-1 */
@@ -469,16 +473,6 @@ body label {
     padding: 2%;
   }
 }
-@media screen and (max-width: 991px) {
-  .index-somos .somos__body-texto h2 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .index-somos .somos__body-texto h2 {
-    font-size: 24px;
-  }
-}
 @media screen and (max-width: 576px) {
   .index-somos .somos__body-texto p {
     font-size: 15px;
@@ -500,11 +494,22 @@ body label {
   height: 100vh;
   width: 100%;
   position: relative;
+  text-align: center;
+}
+@media screen and (max-width: 576px) {
+  .nosotros-portada {
+    height: 60vh;
+  }
 }
 .nosotros-portada h1 {
   color: #eee;
   font-size: 75px;
   position: relative;
+}
+@media screen and (max-width: 991px) {
+  .nosotros-portada h1 {
+    font-size: 45px;
+  }
 }
 
 .nosotros__contenido {
@@ -529,16 +534,41 @@ body label {
 }
 .nosotros__contenido .contenido__historia p {
   color: #eee;
-  font-size: 20px;
+  font-size: 18px;
+}
+@media screen and (max-width: 576px) {
+  .nosotros__contenido .contenido__historia p {
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 2% 0;
+  }
 }
 .nosotros__contenido .contenido__integrantes {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto;
+  gap: 5% 0;
   grid-template-areas: "i1 i2 i3 i4" "i5 i6 i7 i8";
-  height: 150vh;
+  height: 100%;
   width: 100%;
   justify-items: center;
+}
+@media screen and (max-width: 991px) {
+  .nosotros__contenido .contenido__integrantes {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    gap: 5px 0;
+    grid-template-areas: "i1 i2" "i3 i4" "i5 i6" "i7 i8";
+  }
+}
+@media screen and (max-width: 991px) and (max-width: 576px) {
+  .nosotros__contenido .contenido__integrantes {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 .nosotros__contenido .contenido__integrantes .perfil1 {
   grid-area: i1;
@@ -643,8 +673,8 @@ body label {
   flex-direction: row;
   justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/servicios.jpg);
-  background-size: cover;
   background-position: center;
+  background-size: cover;
   box-shadow: inset 0 0 10px #000000;
   height: 100vh;
   width: 100%;
@@ -660,7 +690,7 @@ body label {
   font-size: 75px;
   position: relative;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 991px) {
   .servicios-portada h1 {
     font-size: 45px;
   }
