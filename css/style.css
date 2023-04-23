@@ -612,6 +612,14 @@ body label {
   grid-template-rows: auto;
   grid-template-areas: "br1 br2 br3" "br4 br5 br6" "br7 br8 br12" "br10 br11 br9";
 }
+@media screen and (max-width: 576px) {
+  .porfolio__contenido .contenido__cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "br1 br2" "br3 br4" "br5 br6" "br7 br8" "br12 br10" "br11 br9";
+  }
+}
 .porfolio__contenido .contenido__cards .brand {
   border: 2px solid #374151;
   filter: grayscale(1) blur(1px) brightness(0.55);
