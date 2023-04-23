@@ -9,10 +9,24 @@
     width: 100%;
     position: relative;
 
+    // *media
+    @include mobile {
+        height: 60vh;
+    }
+
+    // *fin media
+
     h1 {
         color: $light-color;
         font-size: 75px;
         position: relative;
+
+        // *media
+        @include mobile {
+            font-size: 45px;
+        }
+
+        // *fin media
     }
 }
 
@@ -33,6 +47,13 @@
             'c5 c6';
         justify-items: center;
         margin-top: 5%;
+
+        // *media
+        @include mobile {
+            @include flex (column, flex-start, center);
+        }
+
+        // *fin media
 
         .c1 {
             grid-area: c1;

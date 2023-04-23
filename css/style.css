@@ -22,6 +22,16 @@ body h2 {
   font-size: 40px;
   margin: 0;
 }
+@media screen and (max-width: 991px) {
+  body h2 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 576px) {
+  body h2 {
+    font-size: 24px;
+  }
+}
 body h3 {
   font-family: "gugi";
   font-size: 25px;
@@ -175,7 +185,7 @@ body label {
   font-size: 20px;
 }
 .card-servicios p {
-  font-size: 15px;
+  font-size: 14px;
   line-height: 1;
   text-align: justify;
 }
@@ -393,16 +403,6 @@ body label {
 .index-contenido .contenido__body-texto h2 {
   color: #FCE44D;
 }
-@media screen and (max-width: 991px) {
-  .index-contenido .contenido__body-texto h2 {
-    font-size: 30px;
-  }
-}
-@media screen and (max-width: 576px) {
-  .index-contenido .contenido__body-texto h2 {
-    font-size: 24px;
-  }
-}
 .index-contenido .contenido__body-texto p {
   color: #eee;
 }
@@ -433,6 +433,11 @@ body label {
   grid-template-areas: "s1 s2";
   background-color: #FCE44D;
   padding: 5%;
+}
+@media screen and (max-width: 991px) {
+  .index-somos {
+    gap: 2%;
+  }
 }
 @media screen and (max-width: 576px) {
   .index-somos {
@@ -645,10 +650,20 @@ body label {
   width: 100%;
   position: relative;
 }
+@media screen and (max-width: 576px) {
+  .servicios-portada {
+    height: 60vh;
+  }
+}
 .servicios-portada h1 {
   color: #eee;
   font-size: 75px;
   position: relative;
+}
+@media screen and (max-width: 576px) {
+  .servicios-portada h1 {
+    font-size: 45px;
+  }
 }
 
 /* Servicios Section Contenido */
@@ -666,6 +681,14 @@ body label {
   grid-template-areas: "c1 c2" "c3 c4" "c5 c6";
   justify-items: center;
   margin-top: 5%;
+}
+@media screen and (max-width: 576px) {
+  .servicios__contenido .contenido__cards {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }
 .servicios__contenido .contenido__cards .c1 {
   grid-area: c1;

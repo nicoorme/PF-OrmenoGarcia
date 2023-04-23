@@ -63,26 +63,15 @@
         gap: 20px;
         grid-area: b1;
 
-            // *media
-            @include tablet {
-                gap: 2%;
-            }
+        // *media
+        @include tablet {
+            gap: 2%;
+        }
 
-            // *fin media
+        // *fin media
 
         h2 {
             color: $secundary-color;
-
-            // *media
-            @include tablet {
-                font-size: 30px;
-            }
-
-            @include mobile {
-                font-size: 24px;
-            }
-
-            // *fin media
         }
 
         p {
@@ -121,6 +110,11 @@
     padding: 5%;
 
     // *media
+    @include tablet {
+        gap: 2%;
+
+    }
+
     @include mobile {
         @include flex (column, flex-start, center);
     }
