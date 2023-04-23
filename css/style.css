@@ -58,9 +58,19 @@ body a {
   cursor: pointer;
   text-decoration: none;
 }
+@media screen and (max-width: 991px) {
+  body a {
+    font-size: 15px;
+  }
+}
 body label {
   color: #eee;
   font-size: 24px;
+}
+@media screen and (max-width: 991px) {
+  body label {
+    font-size: 20px;
+  }
 }
 
 .nav-bg-custom {
@@ -254,6 +264,11 @@ body label {
   height: 100vh;
   width: 100%;
 }
+@media screen and (max-width: 576px) {
+  .contacto__portada {
+    height: 60vh;
+  }
+}
 
 /* Contacto Section-2 */
 .contacto__contenido {
@@ -307,6 +322,15 @@ body label {
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 991px) {
+  .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 25px;
+  }
+}
 .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .contacto-datos {
   align-items: center;
   display: flex;
@@ -324,6 +348,12 @@ body label {
 .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .nuestras-redes img {
   height: 30px;
   width: 30px;
+}
+@media screen and (max-width: 991px) {
+  .contacto__contenido .contenido__nuestros-datos .nuestros-datos__info .nuestras-redes img {
+    height: 24px;
+    width: 24px;
+  }
 }
 
 /* Inicio Section Portada */
@@ -676,17 +706,12 @@ body label {
 
 /* Servicios Section Portada*/
 .servicios-portada {
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/servicios.jpg);
   background-position: center;
   background-size: cover;
   box-shadow: inset 0 0 10px #000000;
   height: 100vh;
   width: 100%;
-  position: relative;
 }
 @media screen and (max-width: 576px) {
   .servicios-portada {

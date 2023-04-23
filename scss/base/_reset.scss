@@ -65,10 +65,24 @@ body {
         color: $light-color;
         cursor: pointer;
         text-decoration: none;
+
+        // *media
+        @include tablet {
+            font-size: 15px;
+        }
+
+        // *fin media
     }
 
     label {
         color: $light-color;
         font-size: 24px;
+
+        // *media
+        @include tablet {
+            font-size: 20px;
+        }
+
+        // *fin media
     }
 }

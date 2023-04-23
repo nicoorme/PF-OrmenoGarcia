@@ -1,13 +1,11 @@
 /* Servicios Section Portada*/
 .servicios-portada {
-    @include flex(row, center, center);
     background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/servicios.jpg);
     background-position: center;
     background-size: cover;
     box-shadow: inset 0 0 10px $dark-color;
     height: 100vh;
     width: 100%;
-    position: relative;
 
     // *media
     @include mobile {

@@ -6,6 +6,13 @@
     box-shadow: inset 0 0 10px $dark-color;
     height: 100vh;
     width: 100%;
+
+    // *media
+    @include mobile {
+        height: 60vh;
+    }
+
+    // *fin media
 }
 
 /* Contacto Section-2 */
@@ -56,6 +63,14 @@
         .nuestros-datos__info {
             @include flex (row, space-between, flex-start);
 
+            // *media
+            @include tablet {
+                @include flex(column, flex-start, center);
+                gap: 25px
+            }
+
+            // *fin media
+
             .contacto-datos {
                 @include flex (column, space-between, center);
                 gap: 5px;
@@ -68,6 +83,14 @@
                 img {
                     height: 30px;
                     width: 30px;
+
+                    // *media
+                    @include tablet {
+                        height: 24px;
+                        width: 24px;
+                    }
+
+                    // *fin media
                 }
             }
         }
