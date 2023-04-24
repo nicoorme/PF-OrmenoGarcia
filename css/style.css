@@ -706,6 +706,10 @@ body label {
 
 /* Servicios Section Portada*/
 .servicios-portada {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   background-image: linear-gradient(rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.15)), url(../multimedia/img/servicios.jpg);
   background-position: center;
   background-size: cover;
