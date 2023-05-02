@@ -156,3 +156,69 @@
         }
     }
 }
+
+/* Inicio Section Servicios */
+.index-servicios {
+    @include grid (repeat(5, 1fr));
+    grid-template-areas: 'b1 b1 b1 b2 b2';
+    align-items: center;
+    gap: 5%;
+    padding: 5%;
+
+    // *media
+    @include tablet {
+        @include grid (repeat(4, 1fr));
+        grid-template-areas: 'b1 b1 b2 b2';
+        gap: 2%;
+    }
+
+    @include mobile {
+        @include flex (column, flex-start, center);
+    }
+
+    // *fin media
+
+    .servicios__body-texto {
+        @include flex (column, center, flex-start);
+        gap: 20px;
+        grid-area: b1;
+
+        // *media
+        @include tablet {
+            gap: 2%;
+        }
+
+        // *fin media
+
+        h2 {
+            color: $secundary-color;
+        }
+
+        li {
+            color: $light-color;
+            font-size: 16px;
+
+            // *media
+            @include mobile {
+                font-size: 15px;
+                line-height: 1.25;
+                margin: 2% 0;
+            }
+
+            // *fin media
+        }
+    }
+
+    .servicios__body-imagen {
+        grid-area: b2;
+        height: 100%;
+        width: 100%;
+
+        img {
+            box-shadow: 5px 5px 10px $dark-color;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+}

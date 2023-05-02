@@ -179,6 +179,11 @@ body label {
   transform: translateY(-7px);
 }
 
+.conocenos:hover {
+  background-color: #374151;
+  color: #eee;
+}
+
 .card-servicios {
   width: 100%;
   border: 2px solid #FCE44D;
@@ -509,6 +514,72 @@ body label {
     line-height: 1.25;
     margin: 2% 0;
   }
+}
+
+/* Inicio Section Servicios */
+.index-servicios {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: "b1 b1 b1 b2 b2";
+  align-items: center;
+  gap: 5%;
+  padding: 5%;
+}
+@media screen and (max-width: 991px) {
+  .index-servicios {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: "b1 b1 b2 b2";
+    gap: 2%;
+  }
+}
+@media screen and (max-width: 576px) {
+  .index-servicios {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
+.index-servicios .servicios__body-texto {
+  align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+  grid-area: b1;
+}
+@media screen and (max-width: 991px) {
+  .index-servicios .servicios__body-texto {
+    gap: 2%;
+  }
+}
+.index-servicios .servicios__body-texto h2 {
+  color: #FCE44D;
+}
+.index-servicios .servicios__body-texto li {
+  color: #eee;
+  font-size: 16px;
+}
+@media screen and (max-width: 576px) {
+  .index-servicios .servicios__body-texto li {
+    font-size: 15px;
+    line-height: 1.25;
+    margin: 2% 0;
+  }
+}
+.index-servicios .servicios__body-imagen {
+  grid-area: b2;
+  height: 100%;
+  width: 100%;
+}
+.index-servicios .servicios__body-imagen img {
+  box-shadow: 5px 5px 10px #000000;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /* Nosotros Section Portada */
