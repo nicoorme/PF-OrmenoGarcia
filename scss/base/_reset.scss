@@ -61,6 +61,22 @@ body {
         margin: 0;
     }
 
+    li {
+        font-family: sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        line-height: 2;
+        color: $light-color;
+        margin: 0;
+
+        // *media
+        @include mobile {
+            font-size: 15px;
+            line-height: 1.25;
+            margin: 2% 0;
+        }
+    }
+
     a {
         color: $light-color;
         cursor: pointer;

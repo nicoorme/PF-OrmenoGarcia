@@ -193,20 +193,6 @@
         h2 {
             color: $secundary-color;
         }
-
-        li {
-            color: $light-color;
-            font-size: 16px;
-
-            // *media
-            @include mobile {
-                font-size: 15px;
-                line-height: 1.25;
-                margin: 2% 0;
-            }
-
-            // *fin media
-        }
     }
 
     .servicios__body-imagen {
@@ -219,6 +205,7 @@
             height: 100%;
             width: 100%;
             object-fit: cover;
+
         }
     }
 }

@@ -9,28 +9,19 @@
     width: 100%;
     position: relative;
     text-align: center;
+    color: $light-color;
+    font-size: 75px;
 
     // *media
+    @include tablet {
+        font-size: 45px;
+    }
+
     @include mobile {
         height: 60vh;
     }
 
     // *fin media
-
-
-    h1 {
-        color: $light-color;
-        font-size: 75px;
-        position: relative;
-
-        // *media
-        @include tablet {
-            font-size: 45px;
-        }
-
-        // *fin media
-
-    }
 }
 
 // Nosotros Section Contenido
