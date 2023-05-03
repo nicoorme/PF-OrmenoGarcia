@@ -4,8 +4,8 @@
     border: 2px solid $secundary-color;
     box-shadow: 3px 3px 15px $dark-color;
 
-    img {
-        filter: brightness(.65);
+    .carousel {
+        filter: brightness(.5);
 
         &:hover {
             filter: brightness(1);

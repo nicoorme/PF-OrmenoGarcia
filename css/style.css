@@ -205,10 +205,10 @@ body label {
   border: 2px solid #FCE44D;
   box-shadow: 3px 3px 15px #000000;
 }
-.card-servicios img {
-  filter: brightness(0.65);
+.card-servicios .carousel {
+  filter: brightness(0.5);
 }
-.card-servicios img:hover {
+.card-servicios .carousel:hover {
   filter: brightness(1);
 }
 .card-servicios h3 {
