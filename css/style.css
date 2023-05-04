@@ -205,17 +205,23 @@ body label {
   border: 2px solid #FCE44D;
   box-shadow: 3px 3px 15px #000000;
 }
+.card-servicios .carrusel {
+  align-self: center;
+}
 .card-servicios .carousel {
   filter: brightness(0.5);
 }
 .card-servicios .carousel:hover {
   filter: brightness(1);
 }
-.card-servicios h3 {
-  font-family: "oswald";
-  font-size: 20px;
+.card-servicios .card-body {
+  padding: 8px;
 }
-.card-servicios p {
+.card-servicios .card-body h3 {
+  font-family: "oswald";
+  font-size: 18px;
+}
+.card-servicios .card-body p {
   font-size: 14px;
   line-height: 1;
   text-align: justify;
